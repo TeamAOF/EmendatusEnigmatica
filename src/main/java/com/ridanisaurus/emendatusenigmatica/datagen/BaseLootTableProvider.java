@@ -44,6 +44,7 @@ import net.minecraft.world.storage.loot.conditions.MatchTool;
 import net.minecraft.world.storage.loot.conditions.SurvivesExplosion;
 import net.minecraft.world.storage.loot.functions.ApplyBonus;
 import net.minecraft.world.storage.loot.functions.ExplosionDecay;
+import net.minecraft.world.storage.loot.functions.SetCount;
 
 import java.io.IOException;
 import java.nio.file.Path;
@@ -111,6 +112,18 @@ public abstract class BaseLootTableProvider extends LootTableProvider {
               ).alternatively(ItemLootEntry.builder(itemProvider)
                     .acceptFunction(ApplyBonus.oreDrops(Enchantments.FORTUNE))
                     .acceptFunction(ExplosionDecay.builder())));
+    return LootTable.builder().addLootPool(builder);
+  }
+
+  protected LootTable.Builder createCountTable(Item item, IItemProvider itemProvider) {
+    LootPool.Builder builder = LootPool.builder()
+            .rolls(ConstantRange.of(1))
+            .addEntry(ItemLootEntry.builder(item)
+                    .acceptCondition(MatchTool.builder(ItemPredicate.Builder.create().enchantment(new EnchantmentPredicate(Enchantments.SILK_TOUCH, MinMaxBounds.IntBound.atLeast(1)))))
+                    .alternatively(ItemLootEntry.builder(itemProvider)
+                            .acceptFunction(SetCount.builder(RandomValueRange.of(4.0F, 9.0F)))
+                            .acceptFunction(ApplyBonus.oreDrops(Enchantments.FORTUNE))
+                            .acceptFunction(ExplosionDecay.builder())));
     return LootTable.builder().addLootPool(builder);
   }
 
