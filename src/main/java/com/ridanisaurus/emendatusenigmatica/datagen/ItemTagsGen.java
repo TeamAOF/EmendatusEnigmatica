@@ -155,7 +155,6 @@ public class ItemTagsGen extends ItemTagsProvider {
             .add(ItemHandler.DUST_OBSIDIAN.get())
             .add(ItemHandler.DUST_QUARTZ.get())
             .add(ItemHandler.DUST_CERTUS_QUARTZ.get())
-            .add(ItemHandler.DUST_SKYSTONE.get())
             .add(ItemHandler.DUST_FLUIX.get())
             .add(ItemHandler.DUST_ENDER.get())
             .add(ItemHandler.DUST_COKE.get())
@@ -212,8 +211,6 @@ public class ItemTagsGen extends ItemTagsProvider {
             .add(ItemHandler.DUST_QUARTZ.get());
     getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "dusts/certus_quartz")))
             .add(ItemHandler.DUST_CERTUS_QUARTZ.get());
-    getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "dusts/skystone")))
-            .add(ItemHandler.DUST_SKYSTONE.get());
     getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "dusts/fluix")))
             .add(ItemHandler.DUST_FLUIX.get());
     getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "dusts/ender")))
@@ -846,6 +843,23 @@ public class ItemTagsGen extends ItemTagsProvider {
 
     getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.AE2_TAG, "dusts/nether_quartz")))
             .add(ItemHandler.DUST_QUARTZ.get());
+
+    getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.AE2_TAG, "crystals/certus_quartz")))
+            .add(ItemHandler.GEM_CERTUS_QUARTZ.get());
+
+    getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.AE2_TAG, "crystals/charged_certus_quartz")))
+            .add(ItemHandler.GEM_CHARGED_CERTUS_QUARTZ.get());
+
+    getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.AE2_TAG, "crystals/quartz")))
+            .add(ItemHandler.GEM_CERTUS_QUARTZ.get())
+            .add(ItemHandler.GEM_CHARGED_CERTUS_QUARTZ.get());
+
+    getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.AE2_TAG, "crystals/certus")))
+            .add(ItemHandler.GEM_CERTUS_QUARTZ.get())
+            .add(ItemHandler.GEM_CHARGED_CERTUS_QUARTZ.get());
+
+    getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.AE2_TAG, "crystals/fluix")))
+            .add(ItemHandler.GEM_FLUIX.get());
 
   }
 }

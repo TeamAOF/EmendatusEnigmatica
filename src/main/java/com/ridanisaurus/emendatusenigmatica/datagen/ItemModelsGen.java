@@ -204,9 +204,6 @@ public class ItemModelsGen extends ItemModelProvider {
     getBuilder("dust_certus_quartz")
             .parent(new ModelFile.UncheckedModelFile("item/generated"))
             .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/dust_certus_quartz"));
-    getBuilder("dust_skystone")
-            .parent(new ModelFile.UncheckedModelFile("item/generated"))
-            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/dust_skystone"));
     getBuilder("dust_fluix")
             .parent(new ModelFile.UncheckedModelFile("item/generated"))
             .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/dust_fluix"));

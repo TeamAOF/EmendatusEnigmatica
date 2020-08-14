@@ -238,7 +238,6 @@
   "item.emendatusenigmatica.dust_quartz": "Quartz Dust",
   "item.emendatusenigmatica.dust_saltpeter": "Saltpeter Dust",
   "item.emendatusenigmatica.dust_silver": "Silver Dust",
-  "item.emendatusenigmatica.dust_skystone": "Skystone Dust",
   "item.emendatusenigmatica.dust_steel": "Steel Dust",
   "item.emendatusenigmatica.dust_sulfur": "Sulfur Dust",
   "item.emendatusenigmatica.dust_tin": "Tin Dust",
@@ -292,5 +291,8 @@
   "item.emendatusenigmatica.plate_tin": "Tin Plate",
   "item.emendatusenigmatica.plate_uranium": "Uranium Plate",
   "item.emendatusenigmatica.plate_zinc": "Zinc Plate",
-  "itemGroup.emendatusenigmatica": "Emendatus Enigmatica"
+  "itemGroup.emendatusenigmatica": "Emendatus Enigmatica",
+  "tooltip.emendatusenigmatica.ores.1": "Harvesting ores with Silktouch Enchanted tool will always drop a Chunk, while using non-Enchanted, or Fortune Enchanted tools will use the same logic used in Vanilla Minecraft.\n\n",
+  "tooltip.emendatusenigmatica.ores.2": "These Chunks act as an Ore Block where it can be smelted, or have its output doubled/tripled ..etc. through other means of ore processing setups.\n\n\n",
+  "tooltip.emendatusenigmatica.ores.3": "Furthermore, these Chunks can be turned into their Stone Block Ore variant by using the Stonecutter."
 }

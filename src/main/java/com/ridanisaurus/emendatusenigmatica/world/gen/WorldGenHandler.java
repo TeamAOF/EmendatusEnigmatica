@@ -26,7 +26,6 @@ package com.ridanisaurus.emendatusenigmatica.world.gen;
 
 import com.ridanisaurus.emendatusenigmatica.config.WorldGenConfig;
 import com.ridanisaurus.emendatusenigmatica.registries.BlockHandler;
-import com.ridanisaurus.emendatusenigmatica.util.Reference;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -36,20 +35,17 @@ import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.placement.*;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.ObjectHolder;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Mod.EventBusSubscriber(modid = Reference.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class WorldGenHandler {
 
   // Vanilla Fillers
-  public static OreFeatureConfig.FillerBlockType ANDESITE = OreFeatureConfig.FillerBlockType.create("ANDESITE", "andesite", new BlockMatcher(Blocks.ANDESITE));
-  public static OreFeatureConfig.FillerBlockType STONE = OreFeatureConfig.FillerBlockType.create("STONE", "stone", new BlockMatcher(Blocks.STONE));
+  public static OreFeatureConfig.FillerBlockType ANDESITE = OreFeatureConfig.FillerBlockType.create("EE_ANDESITE", "ee_andesite", new BlockMatcher(Blocks.ANDESITE));
+  public static OreFeatureConfig.FillerBlockType STONE = OreFeatureConfig.FillerBlockType.create("EE_STONE", "ee_stone", new BlockMatcher(Blocks.STONE));
 
   // Modded Fillers
   private static OreFeatureConfig.FillerBlockType CREATE_GABBRO = null;
@@ -86,31 +82,31 @@ public class WorldGenHandler {
   public static final Block blockQuarkSlate = null;
 
   @SubscribeEvent
-  public static void generateWorld(FMLLoadCompleteEvent event) {
+  public static void generateWorld() {
 
     if (blockCreateGabbro != null) {
-      CREATE_GABBRO = OreFeatureConfig.FillerBlockType.create("GABBRO", "gabbro", new BlockMatcher(blockCreateGabbro.getBlock()));
+      CREATE_GABBRO = OreFeatureConfig.FillerBlockType.create("EE_GABBRO", "ee_gabbro", new BlockMatcher(blockCreateGabbro.getBlock()));
     }
     if (blockCreateLimestone != null) {
-      CREATE_LIMESTONE = OreFeatureConfig.FillerBlockType.create("C_LIMESTONE", "c_limestone", new BlockMatcher(blockCreateLimestone.getBlock()));
+      CREATE_LIMESTONE = OreFeatureConfig.FillerBlockType.create("EE_C_LIMESTONE", "ee_c_limestone", new BlockMatcher(blockCreateLimestone.getBlock()));
     }
     if (blockCreateScoria != null) {
-      CREATE_SCORIA = OreFeatureConfig.FillerBlockType.create("SCORIA", "scoria", new BlockMatcher(blockCreateScoria.getBlock()));
+      CREATE_SCORIA = OreFeatureConfig.FillerBlockType.create("EE_SCORIA", "ee_scoria", new BlockMatcher(blockCreateScoria.getBlock()));
     }
     if (blockCreateWeatheredLimestone != null) {
-      CREATE_WEATHERED_LIMESTONE = OreFeatureConfig.FillerBlockType.create("WEATHERED_LIMESTONE", "weathered_limestone", new BlockMatcher(blockCreateWeatheredLimestone.getBlock()));
+      CREATE_WEATHERED_LIMESTONE = OreFeatureConfig.FillerBlockType.create("EE_WEATHERED_LIMESTONE", "ee_weathered_limestone", new BlockMatcher(blockCreateWeatheredLimestone.getBlock()));
     }
     if (blockQuarkJasper != null) {
-      QUARK_JASPER = OreFeatureConfig.FillerBlockType.create("JASPER", "jasper", new BlockMatcher(blockQuarkJasper.getBlock()));
+      QUARK_JASPER = OreFeatureConfig.FillerBlockType.create("EE_JASPER", "ee_jasper", new BlockMatcher(blockQuarkJasper.getBlock()));
     }
     if (blockQuarkLimestone != null) {
-      QUARK_LIMESTONE = OreFeatureConfig.FillerBlockType.create("Q_LIMESTONE", "q_limestone", new BlockMatcher(blockQuarkLimestone.getBlock()));
+      QUARK_LIMESTONE = OreFeatureConfig.FillerBlockType.create("EE_Q_LIMESTONE", "ee_q_limestone", new BlockMatcher(blockQuarkLimestone.getBlock()));
     }
     if (blockQuarkMarble != null) {
-      QUARK_MARBLE = OreFeatureConfig.FillerBlockType.create("MARBLE", "marble", new BlockMatcher(blockQuarkMarble.getBlock()));
+      QUARK_MARBLE = OreFeatureConfig.FillerBlockType.create("EE_MARBLE", "ee_marble", new BlockMatcher(blockQuarkMarble.getBlock()));
     }
     if (blockQuarkSlate != null) {
-      QUARK_SLATE = OreFeatureConfig.FillerBlockType.create("SLATE", "slate", new BlockMatcher(blockQuarkSlate.getBlock()));
+      QUARK_SLATE = OreFeatureConfig.FillerBlockType.create("EE_SLATE", "ee_slate", new BlockMatcher(blockQuarkSlate.getBlock()));
     }
 
     for (Biome biome : ForgeRegistries.BIOMES) {
@@ -700,7 +696,7 @@ public class WorldGenHandler {
 
   public static void overrideFeatures(Biome biome){
     List<ConfiguredFeature> features = new ArrayList<>();
-    List<Block> vanillaOres = new ArrayList<Block>();
+    List<Block> vanillaOres = new ArrayList<>();
     vanillaOres.add(Blocks.COAL_ORE);
     vanillaOres.add(Blocks.IRON_ORE);
     vanillaOres.add(Blocks.GOLD_ORE);
@@ -709,13 +705,13 @@ public class WorldGenHandler {
     vanillaOres.add(Blocks.LAPIS_ORE);
     vanillaOres.add(Blocks.REDSTONE_ORE);
 
-    for (ConfiguredFeature<?,?> f : biome.getFeatures(GenerationStage.Decoration.UNDERGROUND_ORES)) {
+    for (ConfiguredFeature<?,?> loopedFeatures : biome.getFeatures(GenerationStage.Decoration.UNDERGROUND_ORES)) {
 
-      if(f.config instanceof DecoratedFeatureConfig) {
-        if (((DecoratedFeatureConfig) f.config).feature.feature instanceof OreFeature) {
-          Block block = ((OreFeatureConfig) ((DecoratedFeatureConfig) f.config).feature.config).state.getBlock();
+      if(loopedFeatures.config instanceof DecoratedFeatureConfig) {
+        if (((DecoratedFeatureConfig) loopedFeatures.config).feature.feature instanceof OreFeature) {
+          Block block = ((OreFeatureConfig) ((DecoratedFeatureConfig) loopedFeatures.config).feature.config).state.getBlock();
           if (vanillaOres.contains(block)) {
-            features.add(f);
+            features.add(loopedFeatures);
           }
         }
       }

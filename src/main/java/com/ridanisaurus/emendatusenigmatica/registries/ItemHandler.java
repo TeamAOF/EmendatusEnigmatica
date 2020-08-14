@@ -93,7 +93,6 @@ public class ItemHandler {
   public static final RegistryObject<Item> DUST_OBSIDIAN = ITEMS.register("dust_obsidian", ItemBase::new);
   public static final RegistryObject<Item> DUST_QUARTZ = ITEMS.register("dust_quartz", ItemBase::new);
   public static final RegistryObject<Item> DUST_CERTUS_QUARTZ = ITEMS.register("dust_certus_quartz", ItemBase::new);
-  public static final RegistryObject<Item> DUST_SKYSTONE = ITEMS.register("dust_skystone", ItemBase::new);
   public static final RegistryObject<Item> DUST_FLUIX = ITEMS.register("dust_fluix", ItemBase::new);
   public static final RegistryObject<Item> DUST_ENDER = ITEMS.register("dust_ender", ItemBase::new);
   public static final RegistryObject<Item> DUST_COKE = ITEMS.register("dust_coke", ItemBase::new);
