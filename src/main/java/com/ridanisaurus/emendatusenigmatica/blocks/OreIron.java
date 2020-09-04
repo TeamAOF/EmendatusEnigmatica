@@ -26,7 +26,6 @@ package com.ridanisaurus.emendatusenigmatica.blocks;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.OreBlock;
-import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IWorldReader;
@@ -41,6 +40,6 @@ public class OreIron extends OreBlock {
 
     @Override
     public int getExpDrop(BlockState state, IWorldReader reader, BlockPos pos, int fortune, int silktouch) {
-        return 1;
+        return 0;
     }
 }
