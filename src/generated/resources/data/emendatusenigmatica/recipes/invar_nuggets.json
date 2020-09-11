@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "emendatusenigmatica:ingot_invar"
+    }
+  ],
+  "result": {
+    "item": "emendatusenigmatica:nugget_invar",
+    "count": 9
+  }
+}

@@ -14,6 +14,10 @@
     "emendatusenigmatica:nugget_brass",
     "emendatusenigmatica:nugget_constantan",
     "emendatusenigmatica:nugget_electrum",
-    "emendatusenigmatica:nugget_steel"
+    "emendatusenigmatica:nugget_steel",
+    "emendatusenigmatica:nugget_invar",
+    "emendatusenigmatica:nugget_lumium",
+    "emendatusenigmatica:nugget_signalum",
+    "emendatusenigmatica:nugget_enderium"
   ]
 }

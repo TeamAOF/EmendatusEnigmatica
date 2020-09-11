@@ -129,6 +129,27 @@ public class WorldGenConfig {
     public final IntValue CHARGED_CERTUS_QUARTZ_BOTTOMOFFSET;
     public final IntValue CHARGED_CERTUS_QUARTZ_MAXIMUM_HEIGHT;
 
+    public final BooleanValue CINNABAR_GENERATION_STATE;
+    public final IntValue CINNABAR_VEIN_SIZE;
+    public final IntValue CINNABAR_COUNT_PER_CHUNK;
+    public final IntValue CINNABAR_BOTTOMOFFSET;
+    public final IntValue CINNABAR_MAXIMUM_HEIGHT;
+    public final BooleanValue APATITE_GENERATION_STATE;
+    public final IntValue APATITE_VEIN_SIZE;
+    public final IntValue APATITE_COUNT_PER_CHUNK;
+    public final IntValue APATITE_BOTTOMOFFSET;
+    public final IntValue APATITE_MAXIMUM_HEIGHT;
+    public final BooleanValue SULFUR_GENERATION_STATE;
+    public final IntValue SULFUR_VEIN_SIZE;
+    public final IntValue SULFUR_COUNT_PER_CHUNK;
+    public final IntValue SULFUR_BOTTOMOFFSET;
+    public final IntValue SULFUR_MAXIMUM_HEIGHT;
+    public final BooleanValue SALTPETER_GENERATION_STATE;
+    public final IntValue SALTPETER_VEIN_SIZE;
+    public final IntValue SALTPETER_COUNT_PER_CHUNK;
+    public final IntValue SALTPETER_BOTTOMOFFSET;
+    public final IntValue SALTPETER_MAXIMUM_HEIGHT;
+
     public final BooleanValue VANILLA_STONE_STRATA;
     public final BooleanValue VANILLA_ANDESITE_STRATA;
     public final BooleanValue CREATE_GABBRO_STRATA;
@@ -557,6 +578,98 @@ public class WorldGenConfig {
               .defineInRange("Maximum", 32, 0, 256);
       builder.pop();
 
+      builder.push("Cinnabar Ore");
+      CINNABAR_GENERATION_STATE = builder.comment("Activate/Deactivate the World Gen [Default: true]")
+              .translation("cinnabar.config.state")
+              .worldRestart()
+              .define("Active", true);
+      CINNABAR_VEIN_SIZE = builder.comment("Configure the ore Vein Size [Default: 5]")
+              .translation("cinnabar.config.vein_size")
+              .worldRestart()
+              .defineInRange("Size", 5, 0, 64);
+      CINNABAR_COUNT_PER_CHUNK = builder.comment("Ores count per Chunk [Default: 4]")
+              .translation("cinnabar.config.count_per_chunk")
+              .worldRestart()
+              .defineInRange("Count", 4, 0, 64);
+      CINNABAR_BOTTOMOFFSET = builder.comment("Minimum Y-Level [Default: 0]")
+              .translation("cinnabar.config.bottom_offset")
+              .worldRestart()
+              .defineInRange("Minimum", 0, 0, 128);
+      CINNABAR_MAXIMUM_HEIGHT = builder.comment("Maximum Y-Level [Default: 16]")
+              .translation("cinnabar.config.maximum_height")
+              .worldRestart()
+              .defineInRange("Maximum", 16, 0, 256);
+      builder.pop();
+
+      builder.push("Apatite Ore");
+      APATITE_GENERATION_STATE = builder.comment("Activate/Deactivate the World Gen [Default: true]")
+              .translation("apatite.config.state")
+              .worldRestart()
+              .define("Active", true);
+      APATITE_VEIN_SIZE = builder.comment("Configure the ore Vein Size [Default: 13]")
+              .translation("apatite.config.vein_size")
+              .worldRestart()
+              .defineInRange("Size", 13, 0, 64);
+      APATITE_COUNT_PER_CHUNK = builder.comment("Ores count per Chunk [Default: 2]")
+              .translation("apatite.config.count_per_chunk")
+              .worldRestart()
+              .defineInRange("Count", 2, 0, 64);
+      APATITE_BOTTOMOFFSET = builder.comment("Minimum Y-Level [Default: 0]")
+              .translation("apatite.config.bottom_offset")
+              .worldRestart()
+              .defineInRange("Minimum", 0, 0, 128);
+      APATITE_MAXIMUM_HEIGHT = builder.comment("Maximum Y-Level [Default: 16]")
+              .translation("apatite.config.maximum_height")
+              .worldRestart()
+              .defineInRange("Maximum", 16, 0, 256);
+      builder.pop();
+
+      builder.push("Sulfur Ore");
+      SULFUR_GENERATION_STATE = builder.comment("Activate/Deactivate the World Gen [Default: true]")
+              .translation("sulfur.config.state")
+              .worldRestart()
+              .define("Active", true);
+      SULFUR_VEIN_SIZE = builder.comment("Configure the ore Vein Size [Default: 7]")
+              .translation("sulfur.config.vein_size")
+              .worldRestart()
+              .defineInRange("Size", 7, 0, 64);
+      SULFUR_COUNT_PER_CHUNK = builder.comment("Ores count per Chunk [Default: 3]")
+              .translation("sulfur.config.count_per_chunk")
+              .worldRestart()
+              .defineInRange("Count", 3, 0, 64);
+      SULFUR_BOTTOMOFFSET = builder.comment("Minimum Y-Level [Default: 0]")
+              .translation("sulfur.config.bottom_offset")
+              .worldRestart()
+              .defineInRange("Minimum", 0, 0, 128);
+      SULFUR_MAXIMUM_HEIGHT = builder.comment("Maximum Y-Level [Default: 40]")
+              .translation("sulfur.config.maximum_height")
+              .worldRestart()
+              .defineInRange("Maximum", 40, 0, 256);
+      builder.pop();
+
+      builder.push("Saltpeter Ore");
+      SALTPETER_GENERATION_STATE = builder.comment("Activate/Deactivate the World Gen [Default: true]")
+              .translation("saltpeter.config.state")
+              .worldRestart()
+              .define("Active", true);
+      SALTPETER_VEIN_SIZE = builder.comment("Configure the ore Vein Size [Default: 7]")
+              .translation("saltpeter.config.vein_size")
+              .worldRestart()
+              .defineInRange("Size", 7, 0, 64);
+      SALTPETER_COUNT_PER_CHUNK = builder.comment("Ores count per Chunk [Default: 3]")
+              .translation("saltpeter.config.count_per_chunk")
+              .worldRestart()
+              .defineInRange("Count", 3, 0, 64);
+      SALTPETER_BOTTOMOFFSET = builder.comment("Minimum Y-Level [Default: 0]")
+              .translation("saltpeter.config.bottom_offset")
+              .worldRestart()
+              .defineInRange("Minimum", 0, 0, 128);
+      SALTPETER_MAXIMUM_HEIGHT = builder.comment("Maximum Y-Level [Default: 24]")
+              .translation("saltpeter.config.maximum_height")
+              .worldRestart()
+              .defineInRange("Maximum", 24, 0, 256);
+      builder.pop();
+
       builder.comment("World Gen - Ore Generation on Strata Stone Type");
 
       builder.push("Vanilla Stone");
@@ -712,6 +825,27 @@ public class WorldGenConfig {
   public static int CHARGED_CERTUS_QUARTZ_BOFFSET;
   public static int CHARGED_CERTUS_QUARTZ_MAX;
 
+  public static boolean CINNABAR_STATE;
+  public static int CINNABAR_SIZE;
+  public static int CINNABAR_COUNT;
+  public static int CINNABAR_BOFFSET;
+  public static int CINNABAR_MAX;
+  public static boolean APATITE_STATE;
+  public static int APATITE_SIZE;
+  public static int APATITE_COUNT;
+  public static int APATITE_BOFFSET;
+  public static int APATITE_MAX;
+  public static boolean SULFUR_STATE;
+  public static int SULFUR_SIZE;
+  public static int SULFUR_COUNT;
+  public static int SULFUR_BOFFSET;
+  public static int SULFUR_MAX;
+  public static boolean SALTPETER_STATE;
+  public static int SALTPETER_SIZE;
+  public static int SALTPETER_COUNT;
+  public static int SALTPETER_BOFFSET;
+  public static int SALTPETER_MAX;
+
   public static boolean VANILLA_STONE_STATE;
   public static boolean VANILLA_ANDESITE_STATE;
   public static boolean CREATE_GABBRO_STATE;
@@ -815,6 +949,27 @@ public class WorldGenConfig {
     CHARGED_CERTUS_QUARTZ_COUNT = COMMON.CHARGED_CERTUS_QUARTZ_COUNT_PER_CHUNK.get();
     CHARGED_CERTUS_QUARTZ_BOFFSET = COMMON.CHARGED_CERTUS_QUARTZ_BOTTOMOFFSET.get();
     CHARGED_CERTUS_QUARTZ_MAX = COMMON.CHARGED_CERTUS_QUARTZ_MAXIMUM_HEIGHT.get();
+
+    CINNABAR_STATE = COMMON.CINNABAR_GENERATION_STATE.get();
+    CINNABAR_SIZE = COMMON.CINNABAR_VEIN_SIZE.get();
+    CINNABAR_COUNT = COMMON.CINNABAR_COUNT_PER_CHUNK.get();
+    CINNABAR_BOFFSET = COMMON.CINNABAR_BOTTOMOFFSET.get();
+    CINNABAR_MAX = COMMON.CINNABAR_MAXIMUM_HEIGHT.get();
+    APATITE_STATE = COMMON.APATITE_GENERATION_STATE.get();
+    APATITE_SIZE = COMMON.APATITE_VEIN_SIZE.get();
+    APATITE_COUNT = COMMON.APATITE_COUNT_PER_CHUNK.get();
+    APATITE_BOFFSET = COMMON.APATITE_BOTTOMOFFSET.get();
+    APATITE_MAX = COMMON.APATITE_MAXIMUM_HEIGHT.get();
+    SULFUR_STATE = COMMON.SULFUR_GENERATION_STATE.get();
+    SULFUR_SIZE = COMMON.SULFUR_VEIN_SIZE.get();
+    SULFUR_COUNT = COMMON.SULFUR_COUNT_PER_CHUNK.get();
+    SULFUR_BOFFSET = COMMON.SULFUR_BOTTOMOFFSET.get();
+    SULFUR_MAX = COMMON.SULFUR_MAXIMUM_HEIGHT.get();
+    SALTPETER_STATE = COMMON.SALTPETER_GENERATION_STATE.get();
+    SALTPETER_SIZE = COMMON.SALTPETER_VEIN_SIZE.get();
+    SALTPETER_COUNT = COMMON.SALTPETER_COUNT_PER_CHUNK.get();
+    SALTPETER_BOFFSET = COMMON.SALTPETER_BOTTOMOFFSET.get();
+    SALTPETER_MAX = COMMON.SALTPETER_MAXIMUM_HEIGHT.get();
 
     VANILLA_STONE_STATE = COMMON.VANILLA_STONE_STRATA.get();
     VANILLA_ANDESITE_STATE = COMMON.VANILLA_ANDESITE_STRATA.get();

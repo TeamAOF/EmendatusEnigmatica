@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "emendatusenigmatica:enderium_ingot_from_enderium_block"
+    ]
+  },
+  "criteria": {
+    "cobblestone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:cobblestone"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "emendatusenigmatica:enderium_ingot_from_enderium_block"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "cobblestone",
+      "has_the_recipe"
+    ]
+  ]
+}

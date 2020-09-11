@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "emendatusenigmatica:chunk_saltpeter"
+  },
+  "result": "emendatusenigmatica:dust_saltpeter",
+  "experience": 0.7,
+  "cookingtime": 200
+}

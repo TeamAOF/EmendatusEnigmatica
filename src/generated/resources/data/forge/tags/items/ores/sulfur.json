@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "emendatusenigmatica:ore_sulfur",
+    "emendatusenigmatica:ore_sulfur_andesite",
+    "emendatusenigmatica:ore_sulfur_gabbro",
+    "emendatusenigmatica:ore_sulfur_c_limestone",
+    "emendatusenigmatica:ore_sulfur_scoria",
+    "emendatusenigmatica:ore_sulfur_weathered_limestone",
+    "emendatusenigmatica:ore_sulfur_jasper",
+    "emendatusenigmatica:ore_sulfur_q_limestone",
+    "emendatusenigmatica:ore_sulfur_marble",
+    "emendatusenigmatica:ore_sulfur_slate",
+    "emendatusenigmatica:chunk_sulfur"
+  ]
+}

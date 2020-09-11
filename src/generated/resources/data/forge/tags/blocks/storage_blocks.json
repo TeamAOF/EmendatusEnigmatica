@@ -14,6 +14,14 @@
     "emendatusenigmatica:block_brass",
     "emendatusenigmatica:block_constantan",
     "emendatusenigmatica:block_electrum",
-    "emendatusenigmatica:block_steel"
+    "emendatusenigmatica:block_steel",
+    "emendatusenigmatica:block_invar",
+    "emendatusenigmatica:block_lumium",
+    "emendatusenigmatica:block_signalum",
+    "emendatusenigmatica:block_enderium",
+    "emendatusenigmatica:block_cinnabar",
+    "emendatusenigmatica:block_apatite",
+    "emendatusenigmatica:block_sulfur",
+    "emendatusenigmatica:block_saltpeter"
   ]
 }

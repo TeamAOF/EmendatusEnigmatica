@@ -67,6 +67,15 @@ public class LangGen extends LanguageProvider
     add(BlockHandler.BLOCK_ELECTRUM.get(), "Electrum Block");
     add(BlockHandler.BLOCK_STEEL.get(), "Steel Block");
 
+    add(BlockHandler.BLOCK_INVAR.get(), "Invar Block");
+    add(BlockHandler.BLOCK_LUMIUM.get(), "Lumium Block");
+    add(BlockHandler.BLOCK_SIGNALUM.get(), "Signalum Block");
+    add(BlockHandler.BLOCK_ENDERIUM.get(), "Enderium Block");
+    add(BlockHandler.BLOCK_CINNABAR.get(), "Cinnabar Block");
+    add(BlockHandler.BLOCK_APATITE.get(), "Apatite Block");
+    add(BlockHandler.BLOCK_SULFUR.get(), "Sulfur Block");
+    add(BlockHandler.BLOCK_SALTPETER.get(), "Saltpeter Block");
+
     // Ores
     add(BlockHandler.ORE_COAL.get(), "Coal Ore");
     add(BlockHandler.ORE_IRON.get(), "Iron Ore");
@@ -86,6 +95,11 @@ public class LangGen extends LanguageProvider
     add(BlockHandler.ORE_ZINC.get(), "Zinc Ore");
     add(BlockHandler.ORE_CERTUS_QUARTZ.get(), "Certus Quartz Ore");
     add(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ.get(), "Charged Certus Quartz Ore");
+
+    add(BlockHandler.ORE_CINNABAR.get(), "Cinnabar Ore");
+    add(BlockHandler.ORE_APATITE.get(), "Apatite Ore");
+    add(BlockHandler.ORE_SULFUR.get(), "Sulfur Ore");
+    add(BlockHandler.ORE_SALTPETER.get(), "Saltpeter Ore");
 
     // Strata Ores - Andesite
     add(BlockHandler.ORE_COAL_ANDESITE.get(), "Coal Ore - Andesite");
@@ -107,6 +121,11 @@ public class LangGen extends LanguageProvider
     add(BlockHandler.ORE_CERTUS_QUARTZ_ANDESITE.get(), "Certus Quartz Ore - Andesite");
     add(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_ANDESITE.get(), "Charged Certus Quartz Ore - Andesite");
 
+    add(BlockHandler.ORE_CINNABAR_ANDESITE.get(), "Cinnabar Ore - Andesite");
+    add(BlockHandler.ORE_APATITE_ANDESITE.get(), "Apatite Ore - Andesite");
+    add(BlockHandler.ORE_SULFUR_ANDESITE.get(), "Sulfur Ore - Andesite");
+    add(BlockHandler.ORE_SALTPETER_ANDESITE.get(), "Saltpeter Ore - Andesite");
+
     // Strata Ores - Gabbro
     add(BlockHandler.ORE_COAL_GABBRO.get(), "Coal Ore - Gabbro");
     add(BlockHandler.ORE_IRON_GABBRO.get(), "Iron Ore - Gabbro");
@@ -126,6 +145,11 @@ public class LangGen extends LanguageProvider
     add(BlockHandler.ORE_ZINC_GABBRO.get(), "Zinc Ore - Gabbro");
     add(BlockHandler.ORE_CERTUS_QUARTZ_GABBRO.get(), "Certus Quartz Ore - Gabbro");
     add(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_GABBRO.get(), "Charged Certus Quartz Ore - Gabbro");
+
+    add(BlockHandler.ORE_CINNABAR_GABBRO.get(), "Cinnabar Ore - Gabbro");
+    add(BlockHandler.ORE_APATITE_GABBRO.get(), "Apatite Ore - Gabbro");
+    add(BlockHandler.ORE_SULFUR_GABBRO.get(), "Sulfur Ore - Gabbro");
+    add(BlockHandler.ORE_SALTPETER_GABBRO.get(), "Saltpeter Ore - Gabbro");
 
     // Strata Ores - Limestone (Create)
     add(BlockHandler.ORE_COAL_C_LIMESTONE.get(), "Coal Ore - Limestone");
@@ -147,6 +171,11 @@ public class LangGen extends LanguageProvider
     add(BlockHandler.ORE_CERTUS_QUARTZ_C_LIMESTONE.get(), "Certus Quartz Ore - Limestone");
     add(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_C_LIMESTONE.get(), "Charged Certus Quartz Ore - Limestone");
 
+    add(BlockHandler.ORE_CINNABAR_C_LIMESTONE.get(), "Cinnabar Ore - Limestone");
+    add(BlockHandler.ORE_APATITE_C_LIMESTONE.get(), "Apatite Ore - Limestone");
+    add(BlockHandler.ORE_SULFUR_C_LIMESTONE.get(), "Sulfur Ore - Limestone");
+    add(BlockHandler.ORE_SALTPETER_C_LIMESTONE.get(), "Saltpeter Ore - Limestone");
+
     // Strata Ores - Scoria
     add(BlockHandler.ORE_COAL_SCORIA.get(), "Coal Ore - Scoria");
     add(BlockHandler.ORE_IRON_SCORIA.get(), "Iron Ore - Scoria");
@@ -166,6 +195,11 @@ public class LangGen extends LanguageProvider
     add(BlockHandler.ORE_ZINC_SCORIA.get(), "Zinc Ore - Scoria");
     add(BlockHandler.ORE_CERTUS_QUARTZ_SCORIA.get(), "Certus Quartz Ore - Scoria");
     add(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_SCORIA.get(), "Charged Certus Quartz Ore - Scoria");
+
+    add(BlockHandler.ORE_CINNABAR_SCORIA.get(), "Cinnabar Ore - Scoria");
+    add(BlockHandler.ORE_APATITE_SCORIA.get(), "Apatite Ore - Scoria");
+    add(BlockHandler.ORE_SULFUR_SCORIA.get(), "Sulfur Ore - Scoria");
+    add(BlockHandler.ORE_SALTPETER_SCORIA.get(), "Saltpeter Ore - Scoria");
 
     // Strata Ores - Weathered Limestone
     add(BlockHandler.ORE_COAL_WEATHERED_LIMESTONE.get(), "Coal Ore - Weathered Limestone");
@@ -187,6 +221,11 @@ public class LangGen extends LanguageProvider
     add(BlockHandler.ORE_CERTUS_QUARTZ_WEATHERED_LIMESTONE.get(), "Certus Quartz Ore - Weathered Limestone");
     add(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_WEATHERED_LIMESTONE.get(), "Charged Certus Quartz Ore - Weathered Limestone");
 
+    add(BlockHandler.ORE_CINNABAR_WEATHERED_LIMESTONE.get(), "Cinnabar Ore - Weathered Limestone");
+    add(BlockHandler.ORE_APATITE_WEATHERED_LIMESTONE.get(), "Apatite Ore - Weathered Limestone");
+    add(BlockHandler.ORE_SULFUR_WEATHERED_LIMESTONE.get(), "Sulfur Ore - Weathered Limestone");
+    add(BlockHandler.ORE_SALTPETER_WEATHERED_LIMESTONE.get(), "Saltpeter Ore - Weathered Limestone");
+
     // Strata Ores - Jasper
     add(BlockHandler.ORE_COAL_JASPER.get(), "Coal Ore - Jasper");
     add(BlockHandler.ORE_IRON_JASPER.get(), "Iron Ore - Jasper");
@@ -206,6 +245,11 @@ public class LangGen extends LanguageProvider
     add(BlockHandler.ORE_ZINC_JASPER.get(), "Zinc Ore - Jasper");
     add(BlockHandler.ORE_CERTUS_QUARTZ_JASPER.get(), "Certus Quartz Ore - Jasper");
     add(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_JASPER.get(), "Charged Certus Quartz Ore - Jasper");
+
+    add(BlockHandler.ORE_CINNABAR_JASPER.get(), "Cinnabar Ore - Jasper");
+    add(BlockHandler.ORE_APATITE_JASPER.get(), "Apatite Ore - Jasper");
+    add(BlockHandler.ORE_SULFUR_JASPER.get(), "Sulfur Ore - Jasper");
+    add(BlockHandler.ORE_SALTPETER_JASPER.get(), "Saltpeter Ore - Jasper");
 
     // Strata Ores - Limestone (Quark)
     add(BlockHandler.ORE_COAL_Q_LIMESTONE.get(), "Coal Ore - Limestone");
@@ -227,6 +271,11 @@ public class LangGen extends LanguageProvider
     add(BlockHandler.ORE_CERTUS_QUARTZ_Q_LIMESTONE.get(), "Certus Quartz Ore - Limestone");
     add(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_Q_LIMESTONE.get(), "Charged Certus Quartz Ore - Limestone");
 
+    add(BlockHandler.ORE_CINNABAR_Q_LIMESTONE.get(), "Cinnabar Ore - Limestone");
+    add(BlockHandler.ORE_APATITE_Q_LIMESTONE.get(), "Apatite Ore - Limestone");
+    add(BlockHandler.ORE_SULFUR_Q_LIMESTONE.get(), "Sulfur Ore - Limestone");
+    add(BlockHandler.ORE_SALTPETER_Q_LIMESTONE.get(), "Saltpeter Ore - Limestone");
+
     // Strata Ores - Marble
     add(BlockHandler.ORE_COAL_MARBLE.get(), "Coal Ore - Marble");
     add(BlockHandler.ORE_IRON_MARBLE.get(), "Iron Ore - Marble");
@@ -246,6 +295,11 @@ public class LangGen extends LanguageProvider
     add(BlockHandler.ORE_ZINC_MARBLE.get(), "Zinc Ore - Marble");
     add(BlockHandler.ORE_CERTUS_QUARTZ_MARBLE.get(), "Certus Quartz Ore - Marble");
     add(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_MARBLE.get(), "Charged Certus Quartz Ore - Marble");
+
+    add(BlockHandler.ORE_CINNABAR_MARBLE.get(), "Cinnabar Ore - Marble");
+    add(BlockHandler.ORE_APATITE_MARBLE.get(), "Apatite Ore - Marble");
+    add(BlockHandler.ORE_SULFUR_MARBLE.get(), "Sulfur Ore - Marble");
+    add(BlockHandler.ORE_SALTPETER_MARBLE.get(), "Saltpeter Ore - Marble");
 
     // Strata Ores - Slate
     add(BlockHandler.ORE_COAL_SLATE.get(), "Coal Ore - Slate");
@@ -267,6 +321,11 @@ public class LangGen extends LanguageProvider
     add(BlockHandler.ORE_CERTUS_QUARTZ_SLATE.get(), "Certus Quartz Ore - Slate");
     add(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_SLATE.get(), "Charged Certus Quartz Ore - Slate");
 
+    add(BlockHandler.ORE_CINNABAR_SLATE.get(), "Cinnabar Ore - Slate");
+    add(BlockHandler.ORE_APATITE_SLATE.get(), "Apatite Ore - Slate");
+    add(BlockHandler.ORE_SULFUR_SLATE.get(), "Sulfur Ore - Slate");
+    add(BlockHandler.ORE_SALTPETER_SLATE.get(), "Saltpeter Ore - Slate");
+
     // Ingots
     add(ItemHandler.INGOT_COPPER.get(), "Copper Ingot");
     add(ItemHandler.INGOT_ALUMINUM.get(), "Aluminum Ingot");
@@ -283,6 +342,11 @@ public class LangGen extends LanguageProvider
     add(ItemHandler.INGOT_ELECTRUM.get(), "Electrum Ingot");
     add(ItemHandler.INGOT_STEEL.get(), "Steel Ingot");
 
+    add(ItemHandler.INGOT_INVAR.get(), "Invar Ingot");
+    add(ItemHandler.INGOT_LUMIUM.get(), "Lumium Ingot");
+    add(ItemHandler.INGOT_SIGNALUM.get(), "Signalum Ingot");
+    add(ItemHandler.INGOT_ENDERIUM.get(), "Enderium Ingot");
+
     // Nuggets
     add(ItemHandler.NUGGET_COPPER.get(), "Copper Nugget");
     add(ItemHandler.NUGGET_ALUMINUM.get(), "Aluminum Nugget");
@@ -298,6 +362,11 @@ public class LangGen extends LanguageProvider
     add(ItemHandler.NUGGET_CONSTANTAN.get(), "Constantan Nugget");
     add(ItemHandler.NUGGET_ELECTRUM.get(), "Electrum Nugget");
     add(ItemHandler.NUGGET_STEEL.get(), "Steel Nugget");
+
+    add(ItemHandler.NUGGET_INVAR.get(), "Invar Nugget");
+    add(ItemHandler.NUGGET_LUMIUM.get(), "Lumium Nugget");
+    add(ItemHandler.NUGGET_SIGNALUM.get(), "Signalum Nugget");
+    add(ItemHandler.NUGGET_ENDERIUM.get(), "Enderium Nugget");
 
     // Dusts
     add(ItemHandler.DUST_COPPER.get(), "Copper Dust");
@@ -332,10 +401,18 @@ public class LangGen extends LanguageProvider
     add(ItemHandler.DUST_SALTPETER.get(), "Saltpeter Dust");
     add(ItemHandler.DUST_SULFUR.get(), "Sulfur Dust");
 
+    add(ItemHandler.DUST_INVAR.get(), "Invar Dust");
+    add(ItemHandler.DUST_LUMIUM.get(), "Lumium Dust");
+    add(ItemHandler.DUST_SIGNALUM.get(), "Signalum Dust");
+    add(ItemHandler.DUST_ENDERIUM.get(), "Enderium Dust");
+    add(ItemHandler.DUST_APATITE.get(), "Apatite Dust");
+
     // Gems
     add(ItemHandler.GEM_CERTUS_QUARTZ.get(), "Certus Quartz Crystal");
     add(ItemHandler.GEM_CHARGED_CERTUS_QUARTZ.get(), "Charged Certus Quartz Crystal");
     add(ItemHandler.GEM_FLUIX.get(), "Fluix Crystal");
+
+    add(ItemHandler.GEM_CINNABAR.get(), "Cinnabar");
 
     // Plates
     add(ItemHandler.PLATE_COPPER.get(), "Copper Plate");
@@ -356,6 +433,39 @@ public class LangGen extends LanguageProvider
     add(ItemHandler.PLATE_IRON.get(), "Iron Plate");
     add(ItemHandler.PLATE_LAPIS.get(), "Lapis lazuli Plate");
 
+    add(ItemHandler.PLATE_DIAMOND.get(), "Diamond Plate");
+    add(ItemHandler.PLATE_EMERALD.get(), "Emerald Plate");
+    add(ItemHandler.PLATE_INVAR.get(), "Invar Plate");
+    add(ItemHandler.PLATE_LUMIUM.get(), "Lumium Plate");
+    add(ItemHandler.PLATE_SIGNALUM.get(), "Signalum Plate");
+    add(ItemHandler.PLATE_ENDERIUM.get(), "Enderium Plate");
+
+    // Gears
+    add(ItemHandler.GEAR_COPPER.get(), "Copper Gear");
+    add(ItemHandler.GEAR_ALUMINUM.get(), "Aluminum Gear");
+    add(ItemHandler.GEAR_SILVER.get(), "Silver Gear");
+    add(ItemHandler.GEAR_LEAD.get(), "Lead Gear");
+    add(ItemHandler.GEAR_NICKEL.get(), "Nickel Gear");
+    add(ItemHandler.GEAR_URANIUM.get(), "Uranium Gear");
+    add(ItemHandler.GEAR_OSMIUM.get(), "Osmium Gear");
+    add(ItemHandler.GEAR_TIN.get(), "Tin Gear");
+    add(ItemHandler.GEAR_ZINC.get(), "Zinc Gear");
+    add(ItemHandler.GEAR_BRONZE.get(), "Bronze Gear");
+    add(ItemHandler.GEAR_BRASS.get(), "Brass Gear");
+    add(ItemHandler.GEAR_CONSTANTAN.get(), "Constantan Gear");
+    add(ItemHandler.GEAR_ELECTRUM.get(), "Electrum Gear");
+    add(ItemHandler.GEAR_STEEL.get(), "Steel Gear");
+    add(ItemHandler.GEAR_GOLD.get(), "Gold Gear");
+    add(ItemHandler.GEAR_IRON.get(), "Iron Gear");
+    add(ItemHandler.GEAR_LAPIS.get(), "Lapis lazuli Gear");
+    add(ItemHandler.GEAR_DIAMOND.get(), "Diamond Gear");
+    add(ItemHandler.GEAR_EMERALD.get(), "Emerald Gear");
+    add(ItemHandler.GEAR_INVAR.get(), "Invar Gear");
+    add(ItemHandler.GEAR_LUMIUM.get(), "Lumium Gear");
+    add(ItemHandler.GEAR_SIGNALUM.get(), "Signalum Gear");
+    add(ItemHandler.GEAR_ENDERIUM.get(), "Enderium Gear");
+    add(ItemHandler.GEAR_QUARTZ.get(), "Quartz Gear");
+
     // Chunks
     add(ItemHandler.CHUNK_COAL.get(), "Coal Chunk");
     add(ItemHandler.CHUNK_IRON.get(), "Iron Chunk");
@@ -375,5 +485,10 @@ public class LangGen extends LanguageProvider
     add(ItemHandler.CHUNK_ZINC.get(), "Zinc Chunk");
     add(ItemHandler.CHUNK_CERTUS_QUARTZ.get(), "Certus Quartz Chunk");
     add(ItemHandler.CHUNK_CHARGED_CERTUS_QUARTZ.get(), "Charged Certus Quartz Chunk");
+
+    add(ItemHandler.CHUNK_CINNABAR.get(), "Cinnabar Chunk");
+    add(ItemHandler.CHUNK_APATITE.get(), "Apatite Chunk");
+    add(ItemHandler.CHUNK_SULFUR.get(), "Sulfur Chunk");
+    add(ItemHandler.CHUNK_SALTPETER.get(), "Saltpeter Chunk");
   }
 }

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "emendatusenigmatica:chunk_apatite"
+  },
+  "result": "emendatusenigmatica:dust_apatite",
+  "experience": 0.7,
+  "cookingtime": 200
+}

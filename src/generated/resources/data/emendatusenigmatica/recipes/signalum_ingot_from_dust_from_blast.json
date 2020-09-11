@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "emendatusenigmatica:dust_signalum"
+  },
+  "result": "emendatusenigmatica:ingot_signalum",
+  "experience": 0.7,
+  "cookingtime": 100
+}

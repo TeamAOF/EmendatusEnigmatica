@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "emendatusenigmatica:ore_cinnabar"
+  },
+  "result": "emendatusenigmatica:gem_cinnabar",
+  "experience": 0.7,
+  "cookingtime": 200
+}

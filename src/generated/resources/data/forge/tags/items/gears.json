@@ -1,0 +1,28 @@
+{
+  "replace": false,
+  "values": [
+    "emendatusenigmatica:gear_copper",
+    "emendatusenigmatica:gear_aluminum",
+    "emendatusenigmatica:gear_silver",
+    "emendatusenigmatica:gear_lead",
+    "emendatusenigmatica:gear_nickel",
+    "emendatusenigmatica:gear_uranium",
+    "emendatusenigmatica:gear_osmium",
+    "emendatusenigmatica:gear_tin",
+    "emendatusenigmatica:gear_zinc",
+    "emendatusenigmatica:gear_bronze",
+    "emendatusenigmatica:gear_brass",
+    "emendatusenigmatica:gear_constantan",
+    "emendatusenigmatica:gear_electrum",
+    "emendatusenigmatica:gear_steel",
+    "emendatusenigmatica:gear_gold",
+    "emendatusenigmatica:gear_iron",
+    "emendatusenigmatica:gear_lapis",
+    "emendatusenigmatica:gear_diamond",
+    "emendatusenigmatica:gear_emerald",
+    "emendatusenigmatica:gear_invar",
+    "emendatusenigmatica:gear_lumium",
+    "emendatusenigmatica:gear_signalum",
+    "emendatusenigmatica:gear_enderium"
+  ]
+}

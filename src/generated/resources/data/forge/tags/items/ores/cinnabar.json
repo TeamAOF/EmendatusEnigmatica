@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "emendatusenigmatica:ore_cinnabar",
+    "emendatusenigmatica:ore_cinnabar_andesite",
+    "emendatusenigmatica:ore_cinnabar_gabbro",
+    "emendatusenigmatica:ore_cinnabar_c_limestone",
+    "emendatusenigmatica:ore_cinnabar_scoria",
+    "emendatusenigmatica:ore_cinnabar_weathered_limestone",
+    "emendatusenigmatica:ore_cinnabar_jasper",
+    "emendatusenigmatica:ore_cinnabar_q_limestone",
+    "emendatusenigmatica:ore_cinnabar_marble",
+    "emendatusenigmatica:ore_cinnabar_slate",
+    "emendatusenigmatica:chunk_cinnabar"
+  ]
+}

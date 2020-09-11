@@ -144,6 +144,30 @@ public class RecipesGen extends RecipeProvider {
             .setGroup(Reference.MOD_ID)
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "steel_ingot_from_steel_block"));
 
+    ShapelessRecipeBuilder.shapelessRecipe(ItemHandler.INGOT_INVAR.get(), 9)
+            .addIngredient(BlockHandler.BLOCK_INVAR.get())
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .setGroup(Reference.MOD_ID)
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "invar_ingot_from_invar_block"));
+
+    ShapelessRecipeBuilder.shapelessRecipe(ItemHandler.INGOT_LUMIUM.get(), 9)
+            .addIngredient(BlockHandler.BLOCK_LUMIUM.get())
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .setGroup(Reference.MOD_ID)
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "lumium_ingot_from_lumium_block"));
+
+    ShapelessRecipeBuilder.shapelessRecipe(ItemHandler.INGOT_SIGNALUM.get(), 9)
+            .addIngredient(BlockHandler.BLOCK_SIGNALUM.get())
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .setGroup(Reference.MOD_ID)
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "signalum_ingot_from_signalum_block"));
+
+    ShapelessRecipeBuilder.shapelessRecipe(ItemHandler.INGOT_ENDERIUM.get(), 9)
+            .addIngredient(BlockHandler.BLOCK_ENDERIUM.get())
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .setGroup(Reference.MOD_ID)
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "enderium_ingot_from_enderium_block"));
+
     // Ingot from Nuggets
     ShapedRecipeBuilder.shapedRecipe(ItemHandler.INGOT_COPPER.get())
             .key('#', ItemHandler.NUGGET_COPPER.get())
@@ -271,6 +295,42 @@ public class RecipesGen extends RecipeProvider {
             .setGroup(Reference.MOD_ID)
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "steel_ingot_from_nuggets"));
 
+    ShapedRecipeBuilder.shapedRecipe(ItemHandler.INGOT_INVAR.get())
+            .key('#', ItemHandler.NUGGET_INVAR.get())
+            .patternLine("###")
+            .patternLine("###")
+            .patternLine("###")
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .setGroup(Reference.MOD_ID)
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "invar_ingot_from_nuggets"));
+
+    ShapedRecipeBuilder.shapedRecipe(ItemHandler.INGOT_LUMIUM.get())
+            .key('#', ItemHandler.NUGGET_LUMIUM.get())
+            .patternLine("###")
+            .patternLine("###")
+            .patternLine("###")
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .setGroup(Reference.MOD_ID)
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "lumium_ingot_from_nuggets"));
+
+    ShapedRecipeBuilder.shapedRecipe(ItemHandler.INGOT_SIGNALUM.get())
+            .key('#', ItemHandler.NUGGET_SIGNALUM.get())
+            .patternLine("###")
+            .patternLine("###")
+            .patternLine("###")
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .setGroup(Reference.MOD_ID)
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "signalum_ingot_from_nuggets"));
+
+    ShapedRecipeBuilder.shapedRecipe(ItemHandler.INGOT_ENDERIUM.get())
+            .key('#', ItemHandler.NUGGET_ENDERIUM.get())
+            .patternLine("###")
+            .patternLine("###")
+            .patternLine("###")
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .setGroup(Reference.MOD_ID)
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "enderium_ingot_from_nuggets"));
+
     // Ore from Chunk in Stonecutter
     SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_COAL.get()), Blocks.COAL_ORE)
             .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
@@ -293,7 +353,6 @@ public class RecipesGen extends RecipeProvider {
     SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_REDSTONE.get()), Blocks.REDSTONE_ORE)
             .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "vanilla_redstone_ore_from_chunk"));
-
     SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_COAL.get()), BlockHandler.ORE_COAL.get())
             .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "stone_coal_ore_from_chunk"));
@@ -348,6 +407,19 @@ public class RecipesGen extends RecipeProvider {
     SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_CHARGED_CERTUS_QUARTZ.get()), BlockHandler.ORE_CHARGED_CERTUS_QUARTZ.get())
             .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "stone_charged_certus_quartz_ore_from_chunk"));
+
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_CINNABAR.get()), BlockHandler.ORE_CINNABAR.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "stone_cinnabar_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_APATITE.get()), BlockHandler.ORE_APATITE.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "stone_apatite_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_SULFUR.get()), BlockHandler.ORE_SULFUR.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "stone_sulfur_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_SALTPETER.get()), BlockHandler.ORE_SALTPETER.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "stone_saltpeter_ore_from_chunk"));
 
     SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_COAL.get()), BlockHandler.ORE_COAL_ANDESITE.get())
             .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
@@ -404,6 +476,19 @@ public class RecipesGen extends RecipeProvider {
             .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "andesite_charged_certus_quartz_ore_from_chunk"));
 
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_CINNABAR.get()), BlockHandler.ORE_CINNABAR_ANDESITE.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "andesite_cinnabar_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_APATITE.get()), BlockHandler.ORE_APATITE_ANDESITE.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "andesite_apatite_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_SULFUR.get()), BlockHandler.ORE_SULFUR_ANDESITE.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "andesite_sulfur_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_SALTPETER.get()), BlockHandler.ORE_SALTPETER_ANDESITE.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "andesite_saltpeter_ore_from_chunk"));
+
     SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_COAL.get()), BlockHandler.ORE_COAL_GABBRO.get())
             .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "gabbro_coal_ore_from_chunk"));
@@ -458,6 +543,19 @@ public class RecipesGen extends RecipeProvider {
     SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_CHARGED_CERTUS_QUARTZ.get()), BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_GABBRO.get())
             .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "gabbro_charged_certus_quartz_ore_from_chunk"));
+
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_CINNABAR.get()), BlockHandler.ORE_CINNABAR_GABBRO.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "gabbro_cinnabar_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_APATITE.get()), BlockHandler.ORE_APATITE_GABBRO.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "gabbro_apatite_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_SULFUR.get()), BlockHandler.ORE_SULFUR_GABBRO.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "gabbro_sulfur_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_SALTPETER.get()), BlockHandler.ORE_SALTPETER_GABBRO.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "gabbro_saltpeter_ore_from_chunk"));
 
     SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_COAL.get()), BlockHandler.ORE_COAL_C_LIMESTONE.get())
             .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
@@ -514,6 +612,19 @@ public class RecipesGen extends RecipeProvider {
             .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "c_limestone_charged_certus_quartz_ore_from_chunk"));
 
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_CINNABAR.get()), BlockHandler.ORE_CINNABAR_C_LIMESTONE.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "c_limestone_cinnabar_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_APATITE.get()), BlockHandler.ORE_APATITE_C_LIMESTONE.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "c_limestone_apatite_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_SULFUR.get()), BlockHandler.ORE_SULFUR_C_LIMESTONE.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "c_limestone_sulfur_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_SALTPETER.get()), BlockHandler.ORE_SALTPETER_C_LIMESTONE.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "c_limestone_saltpeter_ore_from_chunk"));
+
     SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_COAL.get()), BlockHandler.ORE_COAL_SCORIA.get())
             .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "scoria_coal_ore_from_chunk"));
@@ -568,6 +679,19 @@ public class RecipesGen extends RecipeProvider {
     SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_CHARGED_CERTUS_QUARTZ.get()), BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_SCORIA.get())
             .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "scoria_charged_certus_quartz_ore_from_chunk"));
+
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_CINNABAR.get()), BlockHandler.ORE_CINNABAR_SCORIA.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "scoria_cinnabar_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_APATITE.get()), BlockHandler.ORE_APATITE_SCORIA.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "scoria_apatite_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_SULFUR.get()), BlockHandler.ORE_SULFUR_SCORIA.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "scoria_sulfur_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_SALTPETER.get()), BlockHandler.ORE_SALTPETER_SCORIA.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "scoria_saltpeter_ore_from_chunk"));
 
     SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_COAL.get()), BlockHandler.ORE_COAL_WEATHERED_LIMESTONE.get())
             .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
@@ -624,6 +748,19 @@ public class RecipesGen extends RecipeProvider {
             .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "weathered_limestone_charged_certus_quartz_ore_from_chunk"));
 
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_CINNABAR.get()), BlockHandler.ORE_CINNABAR_WEATHERED_LIMESTONE.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "weathered_limestone_cinnabar_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_APATITE.get()), BlockHandler.ORE_APATITE_WEATHERED_LIMESTONE.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "weathered_limestone_apatite_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_SULFUR.get()), BlockHandler.ORE_SULFUR_WEATHERED_LIMESTONE.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "weathered_limestone_sulfur_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_SALTPETER.get()), BlockHandler.ORE_SALTPETER_WEATHERED_LIMESTONE.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "weathered_limestone_saltpeter_ore_from_chunk"));
+
     SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_COAL.get()), BlockHandler.ORE_COAL_JASPER.get())
             .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "jasper_coal_ore_from_chunk"));
@@ -678,6 +815,19 @@ public class RecipesGen extends RecipeProvider {
     SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_CHARGED_CERTUS_QUARTZ.get()), BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_JASPER.get())
             .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "jasper_charged_certus_quartz_ore_from_chunk"));
+
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_CINNABAR.get()), BlockHandler.ORE_CINNABAR_JASPER.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "jasper_cinnabar_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_APATITE.get()), BlockHandler.ORE_APATITE_JASPER.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "jasper_apatite_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_SULFUR.get()), BlockHandler.ORE_SULFUR_JASPER.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "jasper_sulfur_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_SALTPETER.get()), BlockHandler.ORE_SALTPETER_JASPER.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "jasper_saltpeter_ore_from_chunk"));
 
     SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_COAL.get()), BlockHandler.ORE_COAL_Q_LIMESTONE.get())
             .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
@@ -734,6 +884,19 @@ public class RecipesGen extends RecipeProvider {
             .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "q_limestone_charged_certus_quartz_ore_from_chunk"));
 
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_CINNABAR.get()), BlockHandler.ORE_CINNABAR_Q_LIMESTONE.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "q_limestone_cinnabar_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_APATITE.get()), BlockHandler.ORE_APATITE_Q_LIMESTONE.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "q_limestone_apatite_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_SULFUR.get()), BlockHandler.ORE_SULFUR_Q_LIMESTONE.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "q_limestone_sulfur_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_SALTPETER.get()), BlockHandler.ORE_SALTPETER_Q_LIMESTONE.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "q_limestone_saltpeter_ore_from_chunk"));
+
     SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_COAL.get()), BlockHandler.ORE_COAL_MARBLE.get())
             .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "marble_coal_ore_from_chunk"));
@@ -789,6 +952,19 @@ public class RecipesGen extends RecipeProvider {
             .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "marble_charged_certus_quartz_ore_from_chunk"));
 
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_CINNABAR.get()), BlockHandler.ORE_CINNABAR_MARBLE.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "marble_cinnabar_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_APATITE.get()), BlockHandler.ORE_APATITE_MARBLE.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "marble_apatite_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_SULFUR.get()), BlockHandler.ORE_SULFUR_MARBLE.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "marble_sulfur_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_SALTPETER.get()), BlockHandler.ORE_SALTPETER_MARBLE.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "marble_saltpeter_ore_from_chunk"));
+
     SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_COAL.get()), BlockHandler.ORE_COAL_SLATE.get())
             .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "slate_coal_ore_from_chunk"));
@@ -843,6 +1019,19 @@ public class RecipesGen extends RecipeProvider {
     SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_CHARGED_CERTUS_QUARTZ.get()), BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_SLATE.get())
             .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "slate_charged_certus_quartz_ore_from_chunk"));
+
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_CINNABAR.get()), BlockHandler.ORE_CINNABAR_SLATE.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "slate_cinnabar_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_APATITE.get()), BlockHandler.ORE_APATITE_SLATE.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "slate_apatite_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_SULFUR.get()), BlockHandler.ORE_SULFUR_SLATE.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "slate_sulfur_ore_from_chunk"));
+    SingleItemRecipeBuilder.stonecuttingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_SALTPETER.get()), BlockHandler.ORE_SALTPETER_SLATE.get())
+            .addCriterion("has_stone", hasItem(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "slate_saltpeter_ore_from_chunk"));
 
     // Ingot+Gems from Dusts
     CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(ItemHandler.DUST_COPPER.get()), ItemHandler.INGOT_COPPER.get(), 0.7F, 200)
@@ -943,6 +1132,34 @@ public class RecipesGen extends RecipeProvider {
             .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "steel_ingot_from_dust_from_blast"));
 
+    CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(ItemHandler.DUST_INVAR.get()), ItemHandler.INGOT_INVAR.get(), 0.7F, 200)
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "invar_ingot_from_dust_from_smelting"));
+    CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(ItemHandler.DUST_INVAR.get()), ItemHandler.INGOT_INVAR.get(), 0.7F, 100)
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "invar_ingot_from_dust_from_blast"));
+
+    CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(ItemHandler.DUST_LUMIUM.get()), ItemHandler.INGOT_LUMIUM.get(), 0.7F, 200)
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "lumium_ingot_from_dust_from_smelting"));
+    CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(ItemHandler.DUST_LUMIUM.get()), ItemHandler.INGOT_LUMIUM.get(), 0.7F, 100)
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "lumium_ingot_from_dust_from_blast"));
+
+    CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(ItemHandler.DUST_SIGNALUM.get()), ItemHandler.INGOT_SIGNALUM.get(), 0.7F, 200)
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "signalum_ingot_from_dust_from_smelting"));
+    CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(ItemHandler.DUST_SIGNALUM.get()), ItemHandler.INGOT_SIGNALUM.get(), 0.7F, 100)
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "signalum_ingot_from_dust_from_blast"));
+
+    CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(ItemHandler.DUST_ENDERIUM.get()), ItemHandler.INGOT_ENDERIUM.get(), 0.7F, 200)
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "enderium_ingot_from_dust_from_smelting"));
+    CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(ItemHandler.DUST_ENDERIUM.get()), ItemHandler.INGOT_ENDERIUM.get(), 0.7F, 100)
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "enderium_ingot_from_dust_from_blast"));
+
     // Nuggets from Ingot
     ShapelessRecipeBuilder.shapelessRecipe(ItemHandler.NUGGET_COPPER.get(), 9)
             .addIngredient(ItemHandler.INGOT_COPPER.get())
@@ -1013,6 +1230,26 @@ public class RecipesGen extends RecipeProvider {
             .addIngredient(ItemHandler.INGOT_STEEL.get())
             .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "steel_nuggets"));
+
+    ShapelessRecipeBuilder.shapelessRecipe(ItemHandler.NUGGET_INVAR.get(), 9)
+            .addIngredient(ItemHandler.INGOT_INVAR.get())
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "invar_nuggets"));
+
+    ShapelessRecipeBuilder.shapelessRecipe(ItemHandler.NUGGET_LUMIUM.get(), 9)
+            .addIngredient(ItemHandler.INGOT_LUMIUM.get())
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "lumium_nuggets"));
+
+    ShapelessRecipeBuilder.shapelessRecipe(ItemHandler.NUGGET_SIGNALUM.get(), 9)
+            .addIngredient(ItemHandler.INGOT_SIGNALUM.get())
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "signalum_nuggets"));
+
+    ShapelessRecipeBuilder.shapelessRecipe(ItemHandler.NUGGET_ENDERIUM.get(), 9)
+            .addIngredient(ItemHandler.INGOT_ENDERIUM.get())
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "enderium_nuggets"));
 
     // Blocks
     ShapedRecipeBuilder.shapedRecipe(BlockHandler.BLOCK_COPPER.get())
@@ -1141,6 +1378,78 @@ public class RecipesGen extends RecipeProvider {
             .setGroup(Reference.MOD_ID)
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "steel_block"));
 
+    ShapedRecipeBuilder.shapedRecipe(BlockHandler.BLOCK_INVAR.get())
+            .key('#', ItemHandler.INGOT_INVAR.get())
+            .patternLine("###")
+            .patternLine("###")
+            .patternLine("###")
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .setGroup(Reference.MOD_ID)
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "invar_block"));
+
+    ShapedRecipeBuilder.shapedRecipe(BlockHandler.BLOCK_LUMIUM.get())
+            .key('#', ItemHandler.INGOT_LUMIUM.get())
+            .patternLine("###")
+            .patternLine("###")
+            .patternLine("###")
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .setGroup(Reference.MOD_ID)
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "lumium_block"));
+
+    ShapedRecipeBuilder.shapedRecipe(BlockHandler.BLOCK_SIGNALUM.get())
+            .key('#', ItemHandler.INGOT_SIGNALUM.get())
+            .patternLine("###")
+            .patternLine("###")
+            .patternLine("###")
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .setGroup(Reference.MOD_ID)
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "signalum_block"));
+
+    ShapedRecipeBuilder.shapedRecipe(BlockHandler.BLOCK_ENDERIUM.get())
+            .key('#', ItemHandler.INGOT_ENDERIUM.get())
+            .patternLine("###")
+            .patternLine("###")
+            .patternLine("###")
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .setGroup(Reference.MOD_ID)
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "enderium_block"));
+
+    ShapedRecipeBuilder.shapedRecipe(BlockHandler.BLOCK_CINNABAR.get())
+            .key('#', ItemHandler.GEM_CINNABAR.get())
+            .patternLine("###")
+            .patternLine("###")
+            .patternLine("###")
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .setGroup(Reference.MOD_ID)
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "cinnabar_block"));
+
+    ShapedRecipeBuilder.shapedRecipe(BlockHandler.BLOCK_APATITE.get())
+            .key('#', ItemHandler.DUST_APATITE.get())
+            .patternLine("###")
+            .patternLine("###")
+            .patternLine("###")
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .setGroup(Reference.MOD_ID)
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "apatite_block"));
+
+    ShapedRecipeBuilder.shapedRecipe(BlockHandler.BLOCK_SULFUR.get())
+            .key('#', ItemHandler.DUST_SULFUR.get())
+            .patternLine("###")
+            .patternLine("###")
+            .patternLine("###")
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .setGroup(Reference.MOD_ID)
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "sulfur_block"));
+
+    ShapedRecipeBuilder.shapedRecipe(BlockHandler.BLOCK_SALTPETER.get())
+            .key('#', ItemHandler.DUST_SALTPETER.get())
+            .patternLine("###")
+            .patternLine("###")
+            .patternLine("###")
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .setGroup(Reference.MOD_ID)
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "saltpeter_block"));
+
     // Chunk Smelting
     CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_COAL.get()), Items.COAL, 0.7F, 200)
             .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
@@ -1213,6 +1522,22 @@ public class RecipesGen extends RecipeProvider {
     CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_CHARGED_CERTUS_QUARTZ.get()), ItemHandler.GEM_CHARGED_CERTUS_QUARTZ.get(), 0.7F, 200)
             .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "charged_certus_quartz_gem_from_smelting_chunk"));
+
+    CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_CINNABAR.get()), ItemHandler.GEM_CINNABAR.get(), 0.7F, 200)
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "cinnabar_gem_from_smelting_chunk"));
+
+    CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_APATITE.get()), ItemHandler.DUST_APATITE.get(), 0.7F, 200)
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "apatite_dust_from_smelting_chunk"));
+
+    CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_SULFUR.get()), ItemHandler.DUST_SULFUR.get(), 0.7F, 200)
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "sulfur_dust_from_smelting_chunk"));
+
+    CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_SALTPETER.get()), ItemHandler.DUST_SALTPETER.get(), 0.7F, 200)
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "saltpeter_dust_from_smelting_chunk"));
 
     // Chunk Blasting
     CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_COAL.get()), Items.COAL, 0.7F, 100)
@@ -1287,6 +1612,23 @@ public class RecipesGen extends RecipeProvider {
             .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "charged_certus_quartz_gem_from_blasting_chunk"));
 
+    CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_CINNABAR.get()), ItemHandler.GEM_CINNABAR.get(), 0.7F, 100)
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "cinnabar_gem_from_blasting_chunk"));
+
+    CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_APATITE.get()), ItemHandler.DUST_APATITE.get(), 0.7F, 100)
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "apatite_dust_from_blasting_chunk"));
+
+    CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_SULFUR.get()), ItemHandler.DUST_SULFUR.get(), 0.7F, 100)
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "sulfur_dust_from_blasting_chunk"));
+
+    CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(ItemHandler.CHUNK_SALTPETER.get()), ItemHandler.DUST_SALTPETER.get(), 0.7F, 100)
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "saltpeter_dust_from_blasting_chunk"));
+
+
     // Ore Smelting
     CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(BlockHandler.ORE_COAL.get()), Items.COAL, 0.7F, 200)
             .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
@@ -1360,6 +1702,22 @@ public class RecipesGen extends RecipeProvider {
             .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "charged_certus_quartz_gem_from_smelting_ore"));
 
+    CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(BlockHandler.ORE_CINNABAR.get()), ItemHandler.GEM_CINNABAR.get(), 0.7F, 200)
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "cinnabar_gem_from_smelting_ore"));
+
+    CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(BlockHandler.ORE_APATITE.get()), ItemHandler.DUST_APATITE.get(), 0.7F, 200)
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "apatite_dust_from_smelting_ore"));
+
+    CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(BlockHandler.ORE_SULFUR.get()), ItemHandler.DUST_SULFUR.get(), 0.7F, 200)
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "sulfur_dust_from_smelting_ore"));
+
+    CookingRecipeBuilder.smeltingRecipe(Ingredient.fromItems(BlockHandler.ORE_SALTPETER.get()), ItemHandler.DUST_SALTPETER.get(), 0.7F, 200)
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "saltpeter_dust_from_smelting_ore"));
+
     // Ore Blasting
     CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(BlockHandler.ORE_COAL.get()), Items.COAL, 0.7F, 100)
             .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
@@ -1432,6 +1790,22 @@ public class RecipesGen extends RecipeProvider {
     CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ.get()), ItemHandler.GEM_CHARGED_CERTUS_QUARTZ.get(), 0.7F, 100)
             .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "charged_certus_quartz_gem_from_blasting_ore"));
+
+    CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(BlockHandler.ORE_CINNABAR.get()), ItemHandler.GEM_CINNABAR.get(), 0.7F, 100)
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "cinnabar_gem_from_blasting_ore"));
+
+    CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(BlockHandler.ORE_APATITE.get()), ItemHandler.DUST_APATITE.get(), 0.7F, 100)
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "apatite_dust_from_blasting_ore"));
+
+    CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(BlockHandler.ORE_SULFUR.get()), ItemHandler.DUST_SULFUR.get(), 0.7F, 100)
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "sulfur_dust_from_blasting_ore"));
+
+    CookingRecipeBuilder.blastingRecipe(Ingredient.fromItems(BlockHandler.ORE_SALTPETER.get()), ItemHandler.DUST_SALTPETER.get(), 0.7F, 100)
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "saltpeter_dust_from_blasting_ore"));
 
     // Ore Block from Chunk
     ShapelessRecipeBuilder.shapelessRecipe(BlockHandler.ORE_COAL.get())
@@ -1541,5 +1915,29 @@ public class RecipesGen extends RecipeProvider {
             .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
             .setGroup(Reference.MOD_ID)
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "charged_certus_quartz_ore_from_chunk"));
+
+    ShapelessRecipeBuilder.shapelessRecipe(BlockHandler.ORE_CINNABAR.get())
+            .addIngredient(ItemHandler.CHUNK_CINNABAR.get())
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .setGroup(Reference.MOD_ID)
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "cinnabar_ore_from_chunk"));
+
+    ShapelessRecipeBuilder.shapelessRecipe(BlockHandler.ORE_APATITE.get())
+            .addIngredient(ItemHandler.CHUNK_APATITE.get())
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .setGroup(Reference.MOD_ID)
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "apatite_ore_from_chunk"));
+
+    ShapelessRecipeBuilder.shapelessRecipe(BlockHandler.ORE_SULFUR.get())
+            .addIngredient(ItemHandler.CHUNK_SULFUR.get())
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .setGroup(Reference.MOD_ID)
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "sulfur_ore_from_chunk"));
+
+    ShapelessRecipeBuilder.shapelessRecipe(BlockHandler.ORE_SALTPETER.get())
+            .addIngredient(ItemHandler.CHUNK_SALTPETER.get())
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .setGroup(Reference.MOD_ID)
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "saltpeter_ore_from_chunk"));
   }
 }

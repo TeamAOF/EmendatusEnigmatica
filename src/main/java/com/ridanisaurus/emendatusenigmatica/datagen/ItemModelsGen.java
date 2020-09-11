@@ -87,6 +87,19 @@ public class ItemModelsGen extends ItemModelProvider {
             .parent(new ModelFile.UncheckedModelFile("item/generated"))
             .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/ingot_steel"));
 
+    getBuilder("ingot_invar")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/ingot_invar"));
+    getBuilder("ingot_lumium")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/ingot_lumium"));
+    getBuilder("ingot_signalum")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/ingot_signalum"));
+    getBuilder("ingot_enderium")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/ingot_enderium"));
+
     // Nuggets
     getBuilder("nugget_copper")
             .parent(new ModelFile.UncheckedModelFile("item/generated"))
@@ -130,6 +143,19 @@ public class ItemModelsGen extends ItemModelProvider {
     getBuilder("nugget_steel")
             .parent(new ModelFile.UncheckedModelFile("item/generated"))
             .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/nugget_steel"));
+
+    getBuilder("nugget_invar")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/nugget_invar"));
+    getBuilder("nugget_lumium")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/nugget_lumium"));
+    getBuilder("nugget_signalum")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/nugget_signalum"));
+    getBuilder("nugget_enderium")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/nugget_enderium"));
 
     // Dusts
     getBuilder("dust_copper")
@@ -226,6 +252,22 @@ public class ItemModelsGen extends ItemModelProvider {
             .parent(new ModelFile.UncheckedModelFile("item/generated"))
             .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/dust_sulfur"));
 
+    getBuilder("dust_invar")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/dust_invar"));
+    getBuilder("dust_lumium")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/dust_lumium"));
+    getBuilder("dust_signalum")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/dust_signalum"));
+    getBuilder("dust_enderium")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/dust_enderium"));
+    getBuilder("dust_apatite")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/dust_apatite"));
+
     // Gems
     getBuilder("gem_certus_quartz")
             .parent(new ModelFile.UncheckedModelFile("item/generated"))
@@ -236,6 +278,10 @@ public class ItemModelsGen extends ItemModelProvider {
     getBuilder("gem_fluix")
             .parent(new ModelFile.UncheckedModelFile("item/generated"))
             .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/gem_fluix"));
+
+    getBuilder("gem_cinnabar")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/gem_cinnabar"));
 
     // Plates
     getBuilder("plate_copper")
@@ -289,6 +335,99 @@ public class ItemModelsGen extends ItemModelProvider {
     getBuilder("plate_lapis")
             .parent(new ModelFile.UncheckedModelFile("item/generated"))
             .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/plate_lapis"));
+
+    getBuilder("plate_diamond")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/plate_diamond"));
+    getBuilder("plate_emerald")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/plate_emerald"));
+    getBuilder("plate_invar")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/plate_invar"));
+    getBuilder("plate_lumium")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/plate_lumium"));
+    getBuilder("plate_signalum")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/plate_signalum"));
+    getBuilder("plate_enderium")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/plate_enderium"));
+
+    // Gears
+    getBuilder("gear_copper")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/gear_copper"));
+    getBuilder("gear_aluminum")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/gear_aluminum"));
+    getBuilder("gear_silver")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/gear_silver"));
+    getBuilder("gear_lead")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/gear_lead"));
+    getBuilder("gear_nickel")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/gear_nickel"));
+    getBuilder("gear_uranium")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/gear_uranium"));
+    getBuilder("gear_osmium")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/gear_osmium"));
+    getBuilder("gear_tin")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/gear_tin"));
+    getBuilder("gear_zinc")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/gear_zinc"));
+    getBuilder("gear_bronze")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/gear_bronze"));
+    getBuilder("gear_brass")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/gear_brass"));
+    getBuilder("gear_constantan")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/gear_constantan"));
+    getBuilder("gear_electrum")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/gear_electrum"));
+    getBuilder("gear_steel")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/gear_steel"));
+    getBuilder("gear_gold")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/gear_gold"));
+    getBuilder("gear_iron")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/gear_iron"));
+    getBuilder("gear_lapis")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/gear_lapis"));
+    getBuilder("gear_diamond")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/gear_diamond"));
+    getBuilder("gear_emerald")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/gear_emerald"));
+    getBuilder("gear_invar")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/gear_invar"));
+    getBuilder("gear_lumium")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/gear_lumium"));
+    getBuilder("gear_signalum")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/gear_signalum"));
+    getBuilder("gear_enderium")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/gear_enderium"));
+    getBuilder("gear_quartz")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/gear_quartz"));
 
     // Chunks
     getBuilder("chunk_coal")
@@ -349,6 +488,19 @@ public class ItemModelsGen extends ItemModelProvider {
             .parent(new ModelFile.UncheckedModelFile("item/generated"))
             .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/chunk_charged_certus_quartz"));
 
+    getBuilder("chunk_cinnabar")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/chunk_cinnabar"));
+    getBuilder("chunk_apatite")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/chunk_apatite"));
+    getBuilder("chunk_sulfur")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/chunk_sulfur"));
+    getBuilder("chunk_saltpeter")
+            .parent(new ModelFile.UncheckedModelFile("item/generated"))
+            .texture("layer0", new ResourceLocation(Reference.MOD_ID, "items/chunk_saltpeter"));
+
     // Block Items
     withExistingParent(BlockHandler.BLOCK_COPPER.get().getRegistryName().getPath(), modLoc("block_copper"))
             .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/block_copper")));
@@ -378,6 +530,23 @@ public class ItemModelsGen extends ItemModelProvider {
             .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/block_electrum")));
     withExistingParent(BlockHandler.BLOCK_STEEL.get().getRegistryName().getPath(), modLoc("block_steel"))
             .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/block_steel")));
+
+    withExistingParent(BlockHandler.BLOCK_INVAR.get().getRegistryName().getPath(), modLoc("block_invar"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/block_invar")));
+    withExistingParent(BlockHandler.BLOCK_LUMIUM.get().getRegistryName().getPath(), modLoc("block_lumium"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/block_lumium")));
+    withExistingParent(BlockHandler.BLOCK_SIGNALUM.get().getRegistryName().getPath(), modLoc("block_signalum"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/block_signalum")));
+    withExistingParent(BlockHandler.BLOCK_ENDERIUM.get().getRegistryName().getPath(), modLoc("block_enderium"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/block_enderium")));
+    withExistingParent(BlockHandler.BLOCK_CINNABAR.get().getRegistryName().getPath(), modLoc("block_cinnabar"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/block_cinnabar")));
+    withExistingParent(BlockHandler.BLOCK_APATITE.get().getRegistryName().getPath(), modLoc("block_apatite"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/block_apatite")));
+    withExistingParent(BlockHandler.BLOCK_SULFUR.get().getRegistryName().getPath(), modLoc("block_sulfur"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/block_sulfur")));
+    withExistingParent(BlockHandler.BLOCK_SALTPETER.get().getRegistryName().getPath(), modLoc("block_saltpeter"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/block_saltpeter")));
 
     // Ore Items
     withExistingParent(BlockHandler.ORE_COAL.get().getRegistryName().getPath(), modLoc("ore_coal"))
@@ -417,6 +586,15 @@ public class ItemModelsGen extends ItemModelProvider {
     withExistingParent(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ.get().getRegistryName().getPath(), modLoc("ore_charged_certus_quartz"))
             .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_charged_certus_quartz")));
 
+    withExistingParent(BlockHandler.ORE_CINNABAR.get().getRegistryName().getPath(), modLoc("ore_cinnabar"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_cinnabar")));
+    withExistingParent(BlockHandler.ORE_APATITE.get().getRegistryName().getPath(), modLoc("ore_apatite"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_apatite")));
+    withExistingParent(BlockHandler.ORE_SULFUR.get().getRegistryName().getPath(), modLoc("ore_sulfur"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_sulfur")));
+    withExistingParent(BlockHandler.ORE_SALTPETER.get().getRegistryName().getPath(), modLoc("ore_saltpeter"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_saltpeter")));
+
     // Strata Ore Items - Andesite
     withExistingParent(BlockHandler.ORE_COAL_ANDESITE.get().getRegistryName().getPath(), modLoc("ore_coal_andesite"))
             .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_coal_andesite")));
@@ -454,6 +632,15 @@ public class ItemModelsGen extends ItemModelProvider {
             .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_certus_quartz_andesite")));
     withExistingParent(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_ANDESITE.get().getRegistryName().getPath(), modLoc("ore_charged_certus_quartz_andesite"))
             .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_charged_certus_quartz_andesite")));
+
+    withExistingParent(BlockHandler.ORE_CINNABAR_ANDESITE.get().getRegistryName().getPath(), modLoc("ore_cinnabar_andesite"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_cinnabar_andesite")));
+    withExistingParent(BlockHandler.ORE_APATITE_ANDESITE.get().getRegistryName().getPath(), modLoc("ore_apatite_andesite"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_apatite_andesite")));
+    withExistingParent(BlockHandler.ORE_SULFUR_ANDESITE.get().getRegistryName().getPath(), modLoc("ore_sulfur_andesite"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_sulfur_andesite")));
+    withExistingParent(BlockHandler.ORE_SALTPETER_ANDESITE.get().getRegistryName().getPath(), modLoc("ore_saltpeter_andesite"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_saltpeter_andesite")));
 
     // Strata Ore Items - Gabbro
     withExistingParent(BlockHandler.ORE_COAL_GABBRO.get().getRegistryName().getPath(), modLoc("ore_coal_gabbro"))
@@ -493,6 +680,15 @@ public class ItemModelsGen extends ItemModelProvider {
     withExistingParent(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_GABBRO.get().getRegistryName().getPath(), modLoc("ore_charged_certus_quartz_gabbro"))
             .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_charged_certus_quartz_gabbro")));
 
+    withExistingParent(BlockHandler.ORE_CINNABAR_GABBRO.get().getRegistryName().getPath(), modLoc("ore_cinnabar_gabbro"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_cinnabar_gabbro")));
+    withExistingParent(BlockHandler.ORE_APATITE_GABBRO.get().getRegistryName().getPath(), modLoc("ore_apatite_gabbro"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_apatite_gabbro")));
+    withExistingParent(BlockHandler.ORE_SULFUR_GABBRO.get().getRegistryName().getPath(), modLoc("ore_sulfur_gabbro"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_sulfur_gabbro")));
+    withExistingParent(BlockHandler.ORE_SALTPETER_GABBRO.get().getRegistryName().getPath(), modLoc("ore_saltpeter_gabbro"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_saltpeter_gabbro")));
+
     // Strata Ore Items - Limestone (Create)
     withExistingParent(Objects.requireNonNull(BlockHandler.ORE_COAL_C_LIMESTONE.get().getRegistryName()).getPath(), modLoc("ore_coal_c_limestone"))
             .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_coal_c_limestone")));
@@ -530,6 +726,15 @@ public class ItemModelsGen extends ItemModelProvider {
             .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_certus_quartz_c_limestone")));
     withExistingParent(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_C_LIMESTONE.get().getRegistryName().getPath(), modLoc("ore_charged_certus_quartz_c_limestone"))
             .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_charged_certus_quartz_c_limestone")));
+
+    withExistingParent(BlockHandler.ORE_CINNABAR_C_LIMESTONE.get().getRegistryName().getPath(), modLoc("ore_cinnabar_c_limestone"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_cinnabar_c_limestone")));
+    withExistingParent(BlockHandler.ORE_APATITE_C_LIMESTONE.get().getRegistryName().getPath(), modLoc("ore_apatite_c_limestone"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_apatite_c_limestone")));
+    withExistingParent(BlockHandler.ORE_SULFUR_C_LIMESTONE.get().getRegistryName().getPath(), modLoc("ore_sulfur_c_limestone"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_sulfur_c_limestone")));
+    withExistingParent(BlockHandler.ORE_SALTPETER_C_LIMESTONE.get().getRegistryName().getPath(), modLoc("ore_saltpeter_c_limestone"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_saltpeter_c_limestone")));
 
     // Strata Ore Items - Scoria
     withExistingParent(BlockHandler.ORE_COAL_SCORIA.get().getRegistryName().getPath(), modLoc("ore_coal_scoria"))
@@ -569,6 +774,15 @@ public class ItemModelsGen extends ItemModelProvider {
     withExistingParent(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_SCORIA.get().getRegistryName().getPath(), modLoc("ore_charged_certus_quartz_scoria"))
             .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_charged_certus_quartz_scoria")));
 
+    withExistingParent(BlockHandler.ORE_CINNABAR_SCORIA.get().getRegistryName().getPath(), modLoc("ore_cinnabar_scoria"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_cinnabar_scoria")));
+    withExistingParent(BlockHandler.ORE_APATITE_SCORIA.get().getRegistryName().getPath(), modLoc("ore_apatite_scoria"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_apatite_scoria")));
+    withExistingParent(BlockHandler.ORE_SULFUR_SCORIA.get().getRegistryName().getPath(), modLoc("ore_sulfur_scoria"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_sulfur_scoria")));
+    withExistingParent(BlockHandler.ORE_SALTPETER_SCORIA.get().getRegistryName().getPath(), modLoc("ore_saltpeter_scoria"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_saltpeter_scoria")));
+
     // Strata Ore Items - Weathered Limestone
     withExistingParent(BlockHandler.ORE_COAL_WEATHERED_LIMESTONE.get().getRegistryName().getPath(), modLoc("ore_coal_weathered_limestone"))
             .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_coal_weathered_limestone")));
@@ -606,6 +820,15 @@ public class ItemModelsGen extends ItemModelProvider {
             .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_certus_quartz_weathered_limestone")));
     withExistingParent(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_WEATHERED_LIMESTONE.get().getRegistryName().getPath(), modLoc("ore_charged_certus_quartz_weathered_limestone"))
             .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_charged_certus_quartz_weathered_limestone")));
+
+    withExistingParent(BlockHandler.ORE_CINNABAR_WEATHERED_LIMESTONE.get().getRegistryName().getPath(), modLoc("ore_cinnabar_weathered_limestone"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_cinnabar_weathered_limestone")));
+    withExistingParent(BlockHandler.ORE_APATITE_WEATHERED_LIMESTONE.get().getRegistryName().getPath(), modLoc("ore_apatite_weathered_limestone"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_apatite_weathered_limestone")));
+    withExistingParent(BlockHandler.ORE_SULFUR_WEATHERED_LIMESTONE.get().getRegistryName().getPath(), modLoc("ore_sulfur_weathered_limestone"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_sulfur_weathered_limestone")));
+    withExistingParent(BlockHandler.ORE_SALTPETER_WEATHERED_LIMESTONE.get().getRegistryName().getPath(), modLoc("ore_saltpeter_weathered_limestone"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_saltpeter_weathered_limestone")));
 
     // Strata Ore Items - Jasper
     withExistingParent(BlockHandler.ORE_COAL_JASPER.get().getRegistryName().getPath(), modLoc("ore_coal_jasper"))
@@ -645,6 +868,15 @@ public class ItemModelsGen extends ItemModelProvider {
     withExistingParent(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_JASPER.get().getRegistryName().getPath(), modLoc("ore_charged_certus_quartz_jasper"))
             .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_charged_certus_quartz_jasper")));
 
+    withExistingParent(BlockHandler.ORE_CINNABAR_JASPER.get().getRegistryName().getPath(), modLoc("ore_cinnabar_jasper"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_cinnabar_jasper")));
+    withExistingParent(BlockHandler.ORE_APATITE_JASPER.get().getRegistryName().getPath(), modLoc("ore_apatite_jasper"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_apatite_jasper")));
+    withExistingParent(BlockHandler.ORE_SULFUR_JASPER.get().getRegistryName().getPath(), modLoc("ore_sulfur_jasper"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_sulfur_jasper")));
+    withExistingParent(BlockHandler.ORE_SALTPETER_JASPER.get().getRegistryName().getPath(), modLoc("ore_saltpeter_jasper"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_saltpeter_jasper")));
+
     // Strata Ore Items - Limestone (Quark)
     withExistingParent(BlockHandler.ORE_COAL_Q_LIMESTONE.get().getRegistryName().getPath(), modLoc("ore_coal_q_limestone"))
             .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_coal_q_limestone")));
@@ -682,6 +914,15 @@ public class ItemModelsGen extends ItemModelProvider {
             .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_certus_quartz_q_limestone")));
     withExistingParent(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_Q_LIMESTONE.get().getRegistryName().getPath(), modLoc("ore_charged_certus_quartz_q_limestone"))
             .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_charged_certus_quartz_q_limestone")));
+
+    withExistingParent(BlockHandler.ORE_CINNABAR_Q_LIMESTONE.get().getRegistryName().getPath(), modLoc("ore_cinnabar_q_limestone"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_cinnabar_q_limestone")));
+    withExistingParent(BlockHandler.ORE_APATITE_Q_LIMESTONE.get().getRegistryName().getPath(), modLoc("ore_apatite_q_limestone"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_apatite_q_limestone")));
+    withExistingParent(BlockHandler.ORE_SULFUR_Q_LIMESTONE.get().getRegistryName().getPath(), modLoc("ore_sulfur_q_limestone"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_sulfur_q_limestone")));
+    withExistingParent(BlockHandler.ORE_SALTPETER_Q_LIMESTONE.get().getRegistryName().getPath(), modLoc("ore_saltpeter_q_limestone"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_saltpeter_q_limestone")));
 
     // Strata Ore Items - Marble
     withExistingParent(BlockHandler.ORE_COAL_MARBLE.get().getRegistryName().getPath(), modLoc("ore_coal_marble"))
@@ -721,6 +962,15 @@ public class ItemModelsGen extends ItemModelProvider {
     withExistingParent(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_MARBLE.get().getRegistryName().getPath(), modLoc("ore_charged_certus_quartz_marble"))
             .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_charged_certus_quartz_marble")));
 
+    withExistingParent(BlockHandler.ORE_CINNABAR_MARBLE.get().getRegistryName().getPath(), modLoc("ore_cinnabar_marble"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_cinnabar_marble")));
+    withExistingParent(BlockHandler.ORE_APATITE_MARBLE.get().getRegistryName().getPath(), modLoc("ore_apatite_marble"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_apatite_marble")));
+    withExistingParent(BlockHandler.ORE_SULFUR_MARBLE.get().getRegistryName().getPath(), modLoc("ore_sulfur_marble"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_sulfur_marble")));
+    withExistingParent(BlockHandler.ORE_SALTPETER_MARBLE.get().getRegistryName().getPath(), modLoc("ore_saltpeter_marble"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_saltpeter_marble")));
+
     // Strata Ore Items - Slate
     withExistingParent(BlockHandler.ORE_COAL_SLATE.get().getRegistryName().getPath(), modLoc("ore_coal_slate"))
             .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_coal_slate")));
@@ -758,6 +1008,15 @@ public class ItemModelsGen extends ItemModelProvider {
             .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_certus_quartz_slate")));
     withExistingParent(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_SLATE.get().getRegistryName().getPath(), modLoc("ore_charged_certus_quartz_slate"))
             .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_charged_certus_quartz_slate")));
+
+    withExistingParent(BlockHandler.ORE_CINNABAR_SLATE.get().getRegistryName().getPath(), modLoc("ore_cinnabar_slate"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_cinnabar_slate")));
+    withExistingParent(BlockHandler.ORE_APATITE_SLATE.get().getRegistryName().getPath(), modLoc("ore_apatite_slate"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_apatite_slate")));
+    withExistingParent(BlockHandler.ORE_SULFUR_SLATE.get().getRegistryName().getPath(), modLoc("ore_sulfur_slate"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_sulfur_slate")));
+    withExistingParent(BlockHandler.ORE_SALTPETER_SLATE.get().getRegistryName().getPath(), modLoc("ore_saltpeter_slate"))
+            .parent(new ModelFile.UncheckedModelFile(new ResourceLocation(Reference.MOD_ID,"block/ore_saltpeter_slate")));
   }
 
   @Override

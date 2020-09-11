@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "emendatusenigmatica:chunk_sulfur"
+  },
+  "result": "emendatusenigmatica:dust_sulfur",
+  "experience": 0.7,
+  "cookingtime": 200
+}

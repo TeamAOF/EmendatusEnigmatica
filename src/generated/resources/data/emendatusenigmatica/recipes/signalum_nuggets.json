@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "emendatusenigmatica:ingot_signalum"
+    }
+  ],
+  "result": {
+    "item": "emendatusenigmatica:nugget_signalum",
+    "count": 9
+  }
+}

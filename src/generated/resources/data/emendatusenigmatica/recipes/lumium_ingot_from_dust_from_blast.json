@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "emendatusenigmatica:dust_lumium"
+  },
+  "result": "emendatusenigmatica:ingot_lumium",
+  "experience": 0.7,
+  "cookingtime": 100
+}

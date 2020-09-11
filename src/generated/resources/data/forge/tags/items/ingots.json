@@ -14,6 +14,10 @@
     "emendatusenigmatica:ingot_brass",
     "emendatusenigmatica:ingot_constantan",
     "emendatusenigmatica:ingot_electrum",
-    "emendatusenigmatica:ingot_steel"
+    "emendatusenigmatica:ingot_steel",
+    "emendatusenigmatica:ingot_invar",
+    "emendatusenigmatica:ingot_lumium",
+    "emendatusenigmatica:ingot_signalum",
+    "emendatusenigmatica:ingot_enderium"
   ]
 }
