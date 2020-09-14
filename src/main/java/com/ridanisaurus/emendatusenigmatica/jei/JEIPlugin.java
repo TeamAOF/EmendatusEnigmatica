@@ -262,16 +262,16 @@ public class JEIPlugin implements IModPlugin {
     modOres.add(ItemHandler.ORE_SULFUR_ITEM_Q_LIMESTONE.get());
     modOres.add(ItemHandler.ORE_SULFUR_ITEM_MARBLE.get());
     modOres.add(ItemHandler.ORE_SULFUR_ITEM_SLATE.get());
-    modOres.add(ItemHandler.ORE_SALTPETER_ITEM.get());
-    modOres.add(ItemHandler.ORE_SALTPETER_ITEM_ANDESITE.get());
-    modOres.add(ItemHandler.ORE_SALTPETER_ITEM_GABBRO.get());
-    modOres.add(ItemHandler.ORE_SALTPETER_ITEM_C_LIMESTONE.get());
-    modOres.add(ItemHandler.ORE_SALTPETER_ITEM_SCORIA.get());
-    modOres.add(ItemHandler.ORE_SALTPETER_ITEM_WEATHERED_LIMESTONE.get());
-    modOres.add(ItemHandler.ORE_SALTPETER_ITEM_JASPER.get());
-    modOres.add(ItemHandler.ORE_SALTPETER_ITEM_Q_LIMESTONE.get());
-    modOres.add(ItemHandler.ORE_SALTPETER_ITEM_MARBLE.get());
-    modOres.add(ItemHandler.ORE_SALTPETER_ITEM_SLATE.get());
+    modOres.add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM.get());
+    modOres.add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_ANDESITE.get());
+    modOres.add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_GABBRO.get());
+    modOres.add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_C_LIMESTONE.get());
+    modOres.add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_SCORIA.get());
+    modOres.add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_WEATHERED_LIMESTONE.get());
+    modOres.add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_JASPER.get());
+    modOres.add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_Q_LIMESTONE.get());
+    modOres.add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_MARBLE.get());
+    modOres.add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_SLATE.get());
 
     for (final Item item : modOres) {
       registration.addIngredientInfo(new ItemStack(item), VanillaTypes.ITEM, "tooltip.emendatusenigmatica.ores.1", "tooltip.emendatusenigmatica.ores.2", "tooltip.emendatusenigmatica.ores.3");

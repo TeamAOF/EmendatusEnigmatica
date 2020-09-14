@@ -188,14 +188,15 @@ public class ItemTagsGen extends ItemTagsProvider {
             .add(ItemHandler.DUST_COKE.get())
             .add(ItemHandler.DUST_GRAPHITE.get())
             .add(ItemHandler.DUST_LITHIUM.get())
-            .add(ItemHandler.DUST_SALTPETER.get())
+            .add(ItemHandler.DUST_POTASSIUM_NITRATE.get())
             .add(ItemHandler.DUST_SULFUR.get())
 
             .add(ItemHandler.DUST_INVAR.get())
             .add(ItemHandler.DUST_LUMIUM.get())
             .add(ItemHandler.DUST_SIGNALUM.get())
             .add(ItemHandler.DUST_ENDERIUM.get())
-            .add(ItemHandler.DUST_APATITE.get());
+            .add(ItemHandler.DUST_APATITE.get())
+            .add(ItemHandler.DUST_WOOD.get());
 
     getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "dusts/copper")))
             .add(ItemHandler.DUST_COPPER.get());
@@ -255,8 +256,14 @@ public class ItemTagsGen extends ItemTagsProvider {
             .add(ItemHandler.DUST_GRAPHITE.get());
     getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "dusts/lithium")))
             .add(ItemHandler.DUST_LITHIUM.get());
+
+    getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "dusts/potassium_nitrate")))
+            .add(ItemHandler.DUST_POTASSIUM_NITRATE.get());
+    getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "dusts/niter")))
+            .add(ItemHandler.DUST_POTASSIUM_NITRATE.get());
     getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "dusts/saltpeter")))
-            .add(ItemHandler.DUST_SALTPETER.get());
+            .add(ItemHandler.DUST_POTASSIUM_NITRATE.get());
+
     getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "dusts/sulfur")))
             .add(ItemHandler.DUST_SULFUR.get());
 
@@ -270,6 +277,8 @@ public class ItemTagsGen extends ItemTagsProvider {
             .add(ItemHandler.DUST_ENDERIUM.get());
     getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "dusts/apatite")))
             .add(ItemHandler.DUST_APATITE.get());
+    getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "dusts/wood")))
+            .add(ItemHandler.DUST_WOOD.get());
 
     // Gems
     getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "gems")))
@@ -277,7 +286,10 @@ public class ItemTagsGen extends ItemTagsProvider {
             .add(ItemHandler.GEM_CHARGED_CERTUS_QUARTZ.get())
             .add(ItemHandler.GEM_FLUIX.get())
 
-            .add(ItemHandler.GEM_CINNABAR.get());
+            .add(ItemHandler.GEM_CINNABAR.get())
+            .add(ItemHandler.GEM_APATITE.get())
+            .add(ItemHandler.GEM_SULFUR.get())
+            .add(ItemHandler.GEM_POTASSIUM_NITRATE.get());
 
     getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "gems/certus_quartz")))
             .add(ItemHandler.GEM_CERTUS_QUARTZ.get());
@@ -288,6 +300,16 @@ public class ItemTagsGen extends ItemTagsProvider {
 
     getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "gems/cinnabar")))
             .add(ItemHandler.GEM_CINNABAR.get());
+    getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "gems/apatite")))
+            .add(ItemHandler.GEM_APATITE.get());
+    getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "gems/sulfur")))
+            .add(ItemHandler.GEM_SULFUR.get());
+    getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "gems/potassium_nitrate")))
+            .add(ItemHandler.GEM_POTASSIUM_NITRATE.get());
+    getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "gems/niter")))
+            .add(ItemHandler.GEM_POTASSIUM_NITRATE.get());
+    getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "gems/saltpeter")))
+            .add(ItemHandler.GEM_POTASSIUM_NITRATE.get());
 
     // Plates
     getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "plates")))
@@ -436,6 +458,8 @@ public class ItemTagsGen extends ItemTagsProvider {
             .add(ItemHandler.GEAR_SIGNALUM.get());
     getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "gears/enderium")))
             .add(ItemHandler.GEAR_ENDERIUM.get());
+    getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "gears/quartz")))
+            .add(ItemHandler.GEAR_QUARTZ.get());
 
     // Chunks
     getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "chunks")))
@@ -461,7 +485,7 @@ public class ItemTagsGen extends ItemTagsProvider {
             .add(ItemHandler.CHUNK_CINNABAR.get())
             .add(ItemHandler.CHUNK_APATITE.get())
             .add(ItemHandler.CHUNK_SULFUR.get())
-            .add(ItemHandler.CHUNK_SALTPETER.get());
+            .add(ItemHandler.CHUNK_POTASSIUM_NITRATE.get());
 
     getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "chunks/coal")))
             .add(ItemHandler.CHUNK_COAL.get());
@@ -506,8 +530,8 @@ public class ItemTagsGen extends ItemTagsProvider {
             .add(ItemHandler.CHUNK_APATITE.get());
     getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "chunks/sulfur")))
             .add(ItemHandler.CHUNK_SULFUR.get());
-    getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "chunks/saltpeter")))
-            .add(ItemHandler.CHUNK_SALTPETER.get());
+    getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "chunks/potassium_nitrate")))
+            .add(ItemHandler.CHUNK_POTASSIUM_NITRATE.get());
 
     // Block Items
     getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "storage_blocks")))
@@ -533,7 +557,7 @@ public class ItemTagsGen extends ItemTagsProvider {
             .add(ItemHandler.BLOCK_CINNABAR_ITEM.get())
             .add(ItemHandler.BLOCK_APATITE_ITEM.get())
             .add(ItemHandler.BLOCK_SULFUR_ITEM.get())
-            .add(ItemHandler.BLOCK_SALTPETER_ITEM.get());
+            .add(ItemHandler.BLOCK_POTASSIUM_NITRATE_ITEM.get());
 
     getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "storage_blocks/copper")))
             .add(ItemHandler.BLOCK_COPPER_ITEM.get());
@@ -578,8 +602,8 @@ public class ItemTagsGen extends ItemTagsProvider {
             .add(ItemHandler.BLOCK_APATITE_ITEM.get());
     getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "storage_blocks/sulfur")))
             .add(ItemHandler.BLOCK_SULFUR_ITEM.get());
-    getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "storage_blocks/saltpeter")))
-            .add(ItemHandler.BLOCK_SALTPETER_ITEM.get());
+    getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "storage_blocks/potassium_nitrate")))
+            .add(ItemHandler.BLOCK_POTASSIUM_NITRATE_ITEM.get());
 
     // Ore Items
     getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "ores")))
@@ -603,7 +627,7 @@ public class ItemTagsGen extends ItemTagsProvider {
             .add(ItemHandler.ORE_CINNABAR_ITEM.get())
             .add(ItemHandler.ORE_APATITE_ITEM.get())
             .add(ItemHandler.ORE_SULFUR_ITEM.get())
-            .add(ItemHandler.ORE_SALTPETER_ITEM.get())
+            .add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM.get())
             
             .add(ItemHandler.ORE_CERTUS_QUARTZ_ITEM.get())
             .add(ItemHandler.ORE_CHARGED_CERTUS_QUARTZ_ITEM.get())
@@ -629,7 +653,7 @@ public class ItemTagsGen extends ItemTagsProvider {
             .add(ItemHandler.ORE_CINNABAR_ITEM_ANDESITE.get())
             .add(ItemHandler.ORE_APATITE_ITEM_ANDESITE.get())
             .add(ItemHandler.ORE_SULFUR_ITEM_ANDESITE.get())
-            .add(ItemHandler.ORE_SALTPETER_ITEM_ANDESITE.get())
+            .add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_ANDESITE.get())
             
             .add(ItemHandler.ORE_COAL_ITEM_GABBRO.get())
             .add(ItemHandler.ORE_IRON_ITEM_GABBRO.get())
@@ -653,7 +677,7 @@ public class ItemTagsGen extends ItemTagsProvider {
             .add(ItemHandler.ORE_CINNABAR_ITEM_GABBRO.get())
             .add(ItemHandler.ORE_APATITE_ITEM_GABBRO.get())
             .add(ItemHandler.ORE_SULFUR_ITEM_GABBRO.get())
-            .add(ItemHandler.ORE_SALTPETER_ITEM_GABBRO.get())
+            .add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_GABBRO.get())
             
             .add(ItemHandler.ORE_COAL_ITEM_C_LIMESTONE.get())
             .add(ItemHandler.ORE_IRON_ITEM_C_LIMESTONE.get())
@@ -677,7 +701,7 @@ public class ItemTagsGen extends ItemTagsProvider {
             .add(ItemHandler.ORE_CINNABAR_ITEM_C_LIMESTONE.get())
             .add(ItemHandler.ORE_APATITE_ITEM_C_LIMESTONE.get())
             .add(ItemHandler.ORE_SULFUR_ITEM_C_LIMESTONE.get())
-            .add(ItemHandler.ORE_SALTPETER_ITEM_C_LIMESTONE.get())
+            .add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_C_LIMESTONE.get())
             
             .add(ItemHandler.ORE_COAL_ITEM_SCORIA.get())
             .add(ItemHandler.ORE_IRON_ITEM_SCORIA.get())
@@ -701,7 +725,7 @@ public class ItemTagsGen extends ItemTagsProvider {
             .add(ItemHandler.ORE_CINNABAR_ITEM_SCORIA.get())
             .add(ItemHandler.ORE_APATITE_ITEM_SCORIA.get())
             .add(ItemHandler.ORE_SULFUR_ITEM_SCORIA.get())
-            .add(ItemHandler.ORE_SALTPETER_ITEM_SCORIA.get())
+            .add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_SCORIA.get())
             
             .add(ItemHandler.ORE_COAL_ITEM_WEATHERED_LIMESTONE.get())
             .add(ItemHandler.ORE_IRON_ITEM_WEATHERED_LIMESTONE.get())
@@ -725,7 +749,7 @@ public class ItemTagsGen extends ItemTagsProvider {
             .add(ItemHandler.ORE_CINNABAR_ITEM_WEATHERED_LIMESTONE.get())
             .add(ItemHandler.ORE_APATITE_ITEM_WEATHERED_LIMESTONE.get())
             .add(ItemHandler.ORE_SULFUR_ITEM_WEATHERED_LIMESTONE.get())
-            .add(ItemHandler.ORE_SALTPETER_ITEM_WEATHERED_LIMESTONE.get())
+            .add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_WEATHERED_LIMESTONE.get())
             
             .add(ItemHandler.ORE_COAL_ITEM_JASPER.get())
             .add(ItemHandler.ORE_IRON_ITEM_JASPER.get())
@@ -749,7 +773,7 @@ public class ItemTagsGen extends ItemTagsProvider {
             .add(ItemHandler.ORE_CINNABAR_ITEM_JASPER.get())
             .add(ItemHandler.ORE_APATITE_ITEM_JASPER.get())
             .add(ItemHandler.ORE_SULFUR_ITEM_JASPER.get())
-            .add(ItemHandler.ORE_SALTPETER_ITEM_JASPER.get())
+            .add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_JASPER.get())
             
             .add(ItemHandler.ORE_COAL_ITEM_Q_LIMESTONE.get())
             .add(ItemHandler.ORE_IRON_ITEM_Q_LIMESTONE.get())
@@ -773,7 +797,7 @@ public class ItemTagsGen extends ItemTagsProvider {
             .add(ItemHandler.ORE_CINNABAR_ITEM_Q_LIMESTONE.get())
             .add(ItemHandler.ORE_APATITE_ITEM_Q_LIMESTONE.get())
             .add(ItemHandler.ORE_SULFUR_ITEM_Q_LIMESTONE.get())
-            .add(ItemHandler.ORE_SALTPETER_ITEM_Q_LIMESTONE.get())
+            .add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_Q_LIMESTONE.get())
             
             .add(ItemHandler.ORE_COAL_ITEM_MARBLE.get())
             .add(ItemHandler.ORE_IRON_ITEM_MARBLE.get())
@@ -797,7 +821,7 @@ public class ItemTagsGen extends ItemTagsProvider {
             .add(ItemHandler.ORE_CINNABAR_ITEM_MARBLE.get())
             .add(ItemHandler.ORE_APATITE_ITEM_MARBLE.get())
             .add(ItemHandler.ORE_SULFUR_ITEM_MARBLE.get())
-            .add(ItemHandler.ORE_SALTPETER_ITEM_MARBLE.get())
+            .add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_MARBLE.get())
             
             .add(ItemHandler.ORE_COAL_ITEM_SLATE.get())
             .add(ItemHandler.ORE_IRON_ITEM_SLATE.get())
@@ -821,7 +845,7 @@ public class ItemTagsGen extends ItemTagsProvider {
             .add(ItemHandler.ORE_CINNABAR_ITEM_SLATE.get())
             .add(ItemHandler.ORE_APATITE_ITEM_SLATE.get())
             .add(ItemHandler.ORE_SULFUR_ITEM_SLATE.get())
-            .add(ItemHandler.ORE_SALTPETER_ITEM_SLATE.get())
+            .add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_SLATE.get())
             
             .add(ItemHandler.CHUNK_COAL.get())
             .add(ItemHandler.CHUNK_IRON.get())
@@ -845,7 +869,7 @@ public class ItemTagsGen extends ItemTagsProvider {
             .add(ItemHandler.CHUNK_CINNABAR.get())
             .add(ItemHandler.CHUNK_APATITE.get())
             .add(ItemHandler.CHUNK_SULFUR.get())
-            .add(ItemHandler.CHUNK_SALTPETER.get());
+            .add(ItemHandler.CHUNK_POTASSIUM_NITRATE.get());
 
     getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "ores/coal")))
             .add(ItemHandler.ORE_COAL_ITEM.get())
@@ -1103,18 +1127,22 @@ public class ItemTagsGen extends ItemTagsProvider {
             .add(ItemHandler.ORE_SULFUR_ITEM_SLATE.get())
             .add(ItemHandler.CHUNK_SULFUR.get());
 
-    getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "ores/saltpeter")))
-            .add(ItemHandler.ORE_SALTPETER_ITEM.get())
-            .add(ItemHandler.ORE_SALTPETER_ITEM_ANDESITE.get())
-            .add(ItemHandler.ORE_SALTPETER_ITEM_GABBRO.get())
-            .add(ItemHandler.ORE_SALTPETER_ITEM_C_LIMESTONE.get())
-            .add(ItemHandler.ORE_SALTPETER_ITEM_SCORIA.get())
-            .add(ItemHandler.ORE_SALTPETER_ITEM_WEATHERED_LIMESTONE.get())
-            .add(ItemHandler.ORE_SALTPETER_ITEM_JASPER.get())
-            .add(ItemHandler.ORE_SALTPETER_ITEM_Q_LIMESTONE.get())
-            .add(ItemHandler.ORE_SALTPETER_ITEM_MARBLE.get())
-            .add(ItemHandler.ORE_SALTPETER_ITEM_SLATE.get())
-            .add(ItemHandler.CHUNK_SALTPETER.get());
+    getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "ores/potassium_nitrate")))
+            .add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM.get())
+            .add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_ANDESITE.get())
+            .add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_GABBRO.get())
+            .add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_C_LIMESTONE.get())
+            .add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_SCORIA.get())
+            .add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_WEATHERED_LIMESTONE.get())
+            .add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_JASPER.get())
+            .add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_Q_LIMESTONE.get())
+            .add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_MARBLE.get())
+            .add(ItemHandler.ORE_POTASSIUM_NITRATE_ITEM_SLATE.get())
+            .add(ItemHandler.CHUNK_POTASSIUM_NITRATE.get());
+
+    // Misc Tags
+    getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "sawdust")))
+            .add(ItemHandler.DUST_WOOD.get());
 
     // Minecraft Additional Tags
     getBuilder(new ItemTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "beacon_payment")))

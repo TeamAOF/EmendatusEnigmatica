@@ -144,11 +144,11 @@ public class WorldGenConfig {
     public final IntValue SULFUR_COUNT_PER_CHUNK;
     public final IntValue SULFUR_BOTTOMOFFSET;
     public final IntValue SULFUR_MAXIMUM_HEIGHT;
-    public final BooleanValue SALTPETER_GENERATION_STATE;
-    public final IntValue SALTPETER_VEIN_SIZE;
-    public final IntValue SALTPETER_COUNT_PER_CHUNK;
-    public final IntValue SALTPETER_BOTTOMOFFSET;
-    public final IntValue SALTPETER_MAXIMUM_HEIGHT;
+    public final BooleanValue POTASSIUM_NITRATE_GENERATION_STATE;
+    public final IntValue POTASSIUM_NITRATE_VEIN_SIZE;
+    public final IntValue POTASSIUM_NITRATE_COUNT_PER_CHUNK;
+    public final IntValue POTASSIUM_NITRATE_BOTTOMOFFSET;
+    public final IntValue POTASSIUM_NITRATE_MAXIMUM_HEIGHT;
 
     public final BooleanValue VANILLA_STONE_STRATA;
     public final BooleanValue VANILLA_ANDESITE_STRATA;
@@ -647,25 +647,25 @@ public class WorldGenConfig {
               .defineInRange("Maximum", 40, 0, 256);
       builder.pop();
 
-      builder.push("Saltpeter Ore");
-      SALTPETER_GENERATION_STATE = builder.comment("Activate/Deactivate the World Gen [Default: true]")
-              .translation("saltpeter.config.state")
+      builder.push("Potassium Nitrate Ore");
+      POTASSIUM_NITRATE_GENERATION_STATE = builder.comment("Activate/Deactivate the World Gen [Default: true]")
+              .translation("potassium_nitrate.config.state")
               .worldRestart()
               .define("Active", true);
-      SALTPETER_VEIN_SIZE = builder.comment("Configure the ore Vein Size [Default: 7]")
-              .translation("saltpeter.config.vein_size")
+      POTASSIUM_NITRATE_VEIN_SIZE = builder.comment("Configure the ore Vein Size [Default: 7]")
+              .translation("potassium_nitrate.config.vein_size")
               .worldRestart()
               .defineInRange("Size", 7, 0, 64);
-      SALTPETER_COUNT_PER_CHUNK = builder.comment("Ores count per Chunk [Default: 3]")
-              .translation("saltpeter.config.count_per_chunk")
+      POTASSIUM_NITRATE_COUNT_PER_CHUNK = builder.comment("Ores count per Chunk [Default: 3]")
+              .translation("potassium_nitrate.config.count_per_chunk")
               .worldRestart()
               .defineInRange("Count", 3, 0, 64);
-      SALTPETER_BOTTOMOFFSET = builder.comment("Minimum Y-Level [Default: 0]")
-              .translation("saltpeter.config.bottom_offset")
+      POTASSIUM_NITRATE_BOTTOMOFFSET = builder.comment("Minimum Y-Level [Default: 0]")
+              .translation("potassium_nitrate.config.bottom_offset")
               .worldRestart()
               .defineInRange("Minimum", 0, 0, 128);
-      SALTPETER_MAXIMUM_HEIGHT = builder.comment("Maximum Y-Level [Default: 24]")
-              .translation("saltpeter.config.maximum_height")
+      POTASSIUM_NITRATE_MAXIMUM_HEIGHT = builder.comment("Maximum Y-Level [Default: 24]")
+              .translation("potassium_nitrate.config.maximum_height")
               .worldRestart()
               .defineInRange("Maximum", 24, 0, 256);
       builder.pop();
@@ -840,11 +840,11 @@ public class WorldGenConfig {
   public static int SULFUR_COUNT;
   public static int SULFUR_BOFFSET;
   public static int SULFUR_MAX;
-  public static boolean SALTPETER_STATE;
-  public static int SALTPETER_SIZE;
-  public static int SALTPETER_COUNT;
-  public static int SALTPETER_BOFFSET;
-  public static int SALTPETER_MAX;
+  public static boolean POTASSIUM_NITRATE_STATE;
+  public static int POTASSIUM_NITRATE_SIZE;
+  public static int POTASSIUM_NITRATE_COUNT;
+  public static int POTASSIUM_NITRATE_BOFFSET;
+  public static int POTASSIUM_NITRATE_MAX;
 
   public static boolean VANILLA_STONE_STATE;
   public static boolean VANILLA_ANDESITE_STATE;
@@ -965,11 +965,11 @@ public class WorldGenConfig {
     SULFUR_COUNT = COMMON.SULFUR_COUNT_PER_CHUNK.get();
     SULFUR_BOFFSET = COMMON.SULFUR_BOTTOMOFFSET.get();
     SULFUR_MAX = COMMON.SULFUR_MAXIMUM_HEIGHT.get();
-    SALTPETER_STATE = COMMON.SALTPETER_GENERATION_STATE.get();
-    SALTPETER_SIZE = COMMON.SALTPETER_VEIN_SIZE.get();
-    SALTPETER_COUNT = COMMON.SALTPETER_COUNT_PER_CHUNK.get();
-    SALTPETER_BOFFSET = COMMON.SALTPETER_BOTTOMOFFSET.get();
-    SALTPETER_MAX = COMMON.SALTPETER_MAXIMUM_HEIGHT.get();
+    POTASSIUM_NITRATE_STATE = COMMON.POTASSIUM_NITRATE_GENERATION_STATE.get();
+    POTASSIUM_NITRATE_SIZE = COMMON.POTASSIUM_NITRATE_VEIN_SIZE.get();
+    POTASSIUM_NITRATE_COUNT = COMMON.POTASSIUM_NITRATE_COUNT_PER_CHUNK.get();
+    POTASSIUM_NITRATE_BOFFSET = COMMON.POTASSIUM_NITRATE_BOTTOMOFFSET.get();
+    POTASSIUM_NITRATE_MAX = COMMON.POTASSIUM_NITRATE_MAXIMUM_HEIGHT.get();
 
     VANILLA_STONE_STATE = COMMON.VANILLA_STONE_STRATA.get();
     VANILLA_ANDESITE_STATE = COMMON.VANILLA_ANDESITE_STRATA.get();

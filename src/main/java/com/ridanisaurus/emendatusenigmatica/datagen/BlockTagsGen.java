@@ -61,7 +61,7 @@ public class BlockTagsGen extends BlockTagsProvider {
             .add(BlockHandler.BLOCK_CINNABAR.get())
             .add(BlockHandler.BLOCK_APATITE.get())
             .add(BlockHandler.BLOCK_SULFUR.get())
-            .add(BlockHandler.BLOCK_SALTPETER.get());
+            .add(BlockHandler.BLOCK_POTASSIUM_NITRATE.get());
 
     getBuilder(new BlockTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "storage_blocks/copper")))
             .add(BlockHandler.BLOCK_COPPER.get());
@@ -106,8 +106,13 @@ public class BlockTagsGen extends BlockTagsProvider {
             .add(BlockHandler.BLOCK_APATITE.get());
     getBuilder(new BlockTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "storage_blocks/sulfur")))
             .add(BlockHandler.BLOCK_SULFUR.get());
+
+    getBuilder(new BlockTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "storage_blocks/potassium_nitrate")))
+            .add(BlockHandler.BLOCK_POTASSIUM_NITRATE.get());
+    getBuilder(new BlockTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "storage_blocks/niter")))
+            .add(BlockHandler.BLOCK_POTASSIUM_NITRATE.get());
     getBuilder(new BlockTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "storage_blocks/saltpeter")))
-            .add(BlockHandler.BLOCK_SALTPETER.get());
+            .add(BlockHandler.BLOCK_POTASSIUM_NITRATE.get());
 
     // Ores
     getBuilder(new BlockTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "ores")))
@@ -133,7 +138,7 @@ public class BlockTagsGen extends BlockTagsProvider {
             .add(BlockHandler.ORE_CINNABAR.get())
             .add(BlockHandler.ORE_APATITE.get())
             .add(BlockHandler.ORE_SULFUR.get())
-            .add(BlockHandler.ORE_SALTPETER.get())
+            .add(BlockHandler.ORE_POTASSIUM_NITRATE.get())
 
             .add(BlockHandler.ORE_COAL_ANDESITE.get())
             .add(BlockHandler.ORE_IRON_ANDESITE.get())
@@ -157,7 +162,7 @@ public class BlockTagsGen extends BlockTagsProvider {
             .add(BlockHandler.ORE_CINNABAR_ANDESITE.get())
             .add(BlockHandler.ORE_APATITE_ANDESITE.get())
             .add(BlockHandler.ORE_SULFUR_ANDESITE.get())
-            .add(BlockHandler.ORE_SALTPETER_ANDESITE.get())
+            .add(BlockHandler.ORE_POTASSIUM_NITRATE_ANDESITE.get())
             
             .add(BlockHandler.ORE_COAL_GABBRO.get())
             .add(BlockHandler.ORE_IRON_GABBRO.get())
@@ -181,7 +186,7 @@ public class BlockTagsGen extends BlockTagsProvider {
             .add(BlockHandler.ORE_CINNABAR_GABBRO.get())
             .add(BlockHandler.ORE_APATITE_GABBRO.get())
             .add(BlockHandler.ORE_SULFUR_GABBRO.get())
-            .add(BlockHandler.ORE_SALTPETER_GABBRO.get())
+            .add(BlockHandler.ORE_POTASSIUM_NITRATE_GABBRO.get())
             
             .add(BlockHandler.ORE_COAL_C_LIMESTONE.get())
             .add(BlockHandler.ORE_IRON_C_LIMESTONE.get())
@@ -205,7 +210,7 @@ public class BlockTagsGen extends BlockTagsProvider {
             .add(BlockHandler.ORE_CINNABAR_C_LIMESTONE.get())
             .add(BlockHandler.ORE_APATITE_C_LIMESTONE.get())
             .add(BlockHandler.ORE_SULFUR_C_LIMESTONE.get())
-            .add(BlockHandler.ORE_SALTPETER_C_LIMESTONE.get())
+            .add(BlockHandler.ORE_POTASSIUM_NITRATE_C_LIMESTONE.get())
             
             .add(BlockHandler.ORE_COAL_SCORIA.get())
             .add(BlockHandler.ORE_IRON_SCORIA.get())
@@ -229,7 +234,7 @@ public class BlockTagsGen extends BlockTagsProvider {
             .add(BlockHandler.ORE_CINNABAR_SCORIA.get())
             .add(BlockHandler.ORE_APATITE_SCORIA.get())
             .add(BlockHandler.ORE_SULFUR_SCORIA.get())
-            .add(BlockHandler.ORE_SALTPETER_SCORIA.get())
+            .add(BlockHandler.ORE_POTASSIUM_NITRATE_SCORIA.get())
             
             .add(BlockHandler.ORE_COAL_WEATHERED_LIMESTONE.get())
             .add(BlockHandler.ORE_IRON_WEATHERED_LIMESTONE.get())
@@ -253,7 +258,7 @@ public class BlockTagsGen extends BlockTagsProvider {
             .add(BlockHandler.ORE_CINNABAR_WEATHERED_LIMESTONE.get())
             .add(BlockHandler.ORE_APATITE_WEATHERED_LIMESTONE.get())
             .add(BlockHandler.ORE_SULFUR_WEATHERED_LIMESTONE.get())
-            .add(BlockHandler.ORE_SALTPETER_WEATHERED_LIMESTONE.get())
+            .add(BlockHandler.ORE_POTASSIUM_NITRATE_WEATHERED_LIMESTONE.get())
             
             .add(BlockHandler.ORE_COAL_JASPER.get())
             .add(BlockHandler.ORE_IRON_JASPER.get())
@@ -277,7 +282,7 @@ public class BlockTagsGen extends BlockTagsProvider {
             .add(BlockHandler.ORE_CINNABAR_JASPER.get())
             .add(BlockHandler.ORE_APATITE_JASPER.get())
             .add(BlockHandler.ORE_SULFUR_JASPER.get())
-            .add(BlockHandler.ORE_SALTPETER_JASPER.get())
+            .add(BlockHandler.ORE_POTASSIUM_NITRATE_JASPER.get())
             
             .add(BlockHandler.ORE_COAL_Q_LIMESTONE.get())
             .add(BlockHandler.ORE_IRON_Q_LIMESTONE.get())
@@ -301,7 +306,7 @@ public class BlockTagsGen extends BlockTagsProvider {
             .add(BlockHandler.ORE_CINNABAR_Q_LIMESTONE.get())
             .add(BlockHandler.ORE_APATITE_Q_LIMESTONE.get())
             .add(BlockHandler.ORE_SULFUR_Q_LIMESTONE.get())
-            .add(BlockHandler.ORE_SALTPETER_Q_LIMESTONE.get())
+            .add(BlockHandler.ORE_POTASSIUM_NITRATE_Q_LIMESTONE.get())
             
             .add(BlockHandler.ORE_COAL_MARBLE.get())
             .add(BlockHandler.ORE_IRON_MARBLE.get())
@@ -325,7 +330,7 @@ public class BlockTagsGen extends BlockTagsProvider {
             .add(BlockHandler.ORE_CINNABAR_MARBLE.get())
             .add(BlockHandler.ORE_APATITE_MARBLE.get())
             .add(BlockHandler.ORE_SULFUR_MARBLE.get())
-            .add(BlockHandler.ORE_SALTPETER_MARBLE.get())
+            .add(BlockHandler.ORE_POTASSIUM_NITRATE_MARBLE.get())
             
             .add(BlockHandler.ORE_COAL_SLATE.get())
             .add(BlockHandler.ORE_IRON_SLATE.get())
@@ -349,7 +354,7 @@ public class BlockTagsGen extends BlockTagsProvider {
             .add(BlockHandler.ORE_CINNABAR_SLATE.get())
             .add(BlockHandler.ORE_APATITE_SLATE.get())
             .add(BlockHandler.ORE_SULFUR_SLATE.get())
-            .add(BlockHandler.ORE_SALTPETER_SLATE.get());
+            .add(BlockHandler.ORE_POTASSIUM_NITRATE_SLATE.get());
 
     getBuilder(new BlockTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "ores/coal")))
             .add(BlockHandler.ORE_COAL.get())
@@ -586,17 +591,17 @@ public class BlockTagsGen extends BlockTagsProvider {
             .add(BlockHandler.ORE_SULFUR_MARBLE.get())
             .add(BlockHandler.ORE_SULFUR_SLATE.get());
 
-    getBuilder(new BlockTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "ores/saltpeter")))
-            .add(BlockHandler.ORE_SALTPETER.get())
-            .add(BlockHandler.ORE_SALTPETER_ANDESITE.get())
-            .add(BlockHandler.ORE_SALTPETER_GABBRO.get())
-            .add(BlockHandler.ORE_SALTPETER_C_LIMESTONE.get())
-            .add(BlockHandler.ORE_SALTPETER_SCORIA.get())
-            .add(BlockHandler.ORE_SALTPETER_WEATHERED_LIMESTONE.get())
-            .add(BlockHandler.ORE_SALTPETER_JASPER.get())
-            .add(BlockHandler.ORE_SALTPETER_Q_LIMESTONE.get())
-            .add(BlockHandler.ORE_SALTPETER_MARBLE.get())
-            .add(BlockHandler.ORE_SALTPETER_SLATE.get());
+    getBuilder(new BlockTags.Wrapper(new ResourceLocation(Reference.FORGE_TAG, "ores/potassium_nitrate")))
+            .add(BlockHandler.ORE_POTASSIUM_NITRATE.get())
+            .add(BlockHandler.ORE_POTASSIUM_NITRATE_ANDESITE.get())
+            .add(BlockHandler.ORE_POTASSIUM_NITRATE_GABBRO.get())
+            .add(BlockHandler.ORE_POTASSIUM_NITRATE_C_LIMESTONE.get())
+            .add(BlockHandler.ORE_POTASSIUM_NITRATE_SCORIA.get())
+            .add(BlockHandler.ORE_POTASSIUM_NITRATE_WEATHERED_LIMESTONE.get())
+            .add(BlockHandler.ORE_POTASSIUM_NITRATE_JASPER.get())
+            .add(BlockHandler.ORE_POTASSIUM_NITRATE_Q_LIMESTONE.get())
+            .add(BlockHandler.ORE_POTASSIUM_NITRATE_MARBLE.get())
+            .add(BlockHandler.ORE_POTASSIUM_NITRATE_SLATE.get());
 
     // Misc
     getBuilder(new BlockTags.Wrapper(new ResourceLocation(Reference.MOD_ID, "misc/enigmatic_exchanger")))

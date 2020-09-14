@@ -30,12 +30,13 @@
     "emendatusenigmatica:dust_coke",
     "emendatusenigmatica:dust_graphite",
     "emendatusenigmatica:dust_lithium",
-    "emendatusenigmatica:dust_saltpeter",
+    "emendatusenigmatica:dust_potassium_nitrate",
     "emendatusenigmatica:dust_sulfur",
     "emendatusenigmatica:dust_invar",
     "emendatusenigmatica:dust_lumium",
     "emendatusenigmatica:dust_signalum",
     "emendatusenigmatica:dust_enderium",
-    "emendatusenigmatica:dust_apatite"
+    "emendatusenigmatica:dust_apatite",
+    "emendatusenigmatica:dust_wood"
   ]
 }

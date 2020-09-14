@@ -74,7 +74,7 @@ public class LangGen extends LanguageProvider
     add(BlockHandler.BLOCK_CINNABAR.get(), "Cinnabar Block");
     add(BlockHandler.BLOCK_APATITE.get(), "Apatite Block");
     add(BlockHandler.BLOCK_SULFUR.get(), "Sulfur Block");
-    add(BlockHandler.BLOCK_SALTPETER.get(), "Saltpeter Block");
+    add(BlockHandler.BLOCK_POTASSIUM_NITRATE.get(), "Potassium Nitrate Block");
 
     // Ores
     add(BlockHandler.ORE_COAL.get(), "Coal Ore");
@@ -99,7 +99,7 @@ public class LangGen extends LanguageProvider
     add(BlockHandler.ORE_CINNABAR.get(), "Cinnabar Ore");
     add(BlockHandler.ORE_APATITE.get(), "Apatite Ore");
     add(BlockHandler.ORE_SULFUR.get(), "Sulfur Ore");
-    add(BlockHandler.ORE_SALTPETER.get(), "Saltpeter Ore");
+    add(BlockHandler.ORE_POTASSIUM_NITRATE.get(), "Potassium Nitrate Ore");
 
     // Strata Ores - Andesite
     add(BlockHandler.ORE_COAL_ANDESITE.get(), "Coal Ore - Andesite");
@@ -124,7 +124,7 @@ public class LangGen extends LanguageProvider
     add(BlockHandler.ORE_CINNABAR_ANDESITE.get(), "Cinnabar Ore - Andesite");
     add(BlockHandler.ORE_APATITE_ANDESITE.get(), "Apatite Ore - Andesite");
     add(BlockHandler.ORE_SULFUR_ANDESITE.get(), "Sulfur Ore - Andesite");
-    add(BlockHandler.ORE_SALTPETER_ANDESITE.get(), "Saltpeter Ore - Andesite");
+    add(BlockHandler.ORE_POTASSIUM_NITRATE_ANDESITE.get(), "Potassium Nitrate Ore - Andesite");
 
     // Strata Ores - Gabbro
     add(BlockHandler.ORE_COAL_GABBRO.get(), "Coal Ore - Gabbro");
@@ -149,7 +149,7 @@ public class LangGen extends LanguageProvider
     add(BlockHandler.ORE_CINNABAR_GABBRO.get(), "Cinnabar Ore - Gabbro");
     add(BlockHandler.ORE_APATITE_GABBRO.get(), "Apatite Ore - Gabbro");
     add(BlockHandler.ORE_SULFUR_GABBRO.get(), "Sulfur Ore - Gabbro");
-    add(BlockHandler.ORE_SALTPETER_GABBRO.get(), "Saltpeter Ore - Gabbro");
+    add(BlockHandler.ORE_POTASSIUM_NITRATE_GABBRO.get(), "Potassium Nitrate Ore - Gabbro");
 
     // Strata Ores - Limestone (Create)
     add(BlockHandler.ORE_COAL_C_LIMESTONE.get(), "Coal Ore - Limestone");
@@ -174,7 +174,7 @@ public class LangGen extends LanguageProvider
     add(BlockHandler.ORE_CINNABAR_C_LIMESTONE.get(), "Cinnabar Ore - Limestone");
     add(BlockHandler.ORE_APATITE_C_LIMESTONE.get(), "Apatite Ore - Limestone");
     add(BlockHandler.ORE_SULFUR_C_LIMESTONE.get(), "Sulfur Ore - Limestone");
-    add(BlockHandler.ORE_SALTPETER_C_LIMESTONE.get(), "Saltpeter Ore - Limestone");
+    add(BlockHandler.ORE_POTASSIUM_NITRATE_C_LIMESTONE.get(), "Potassium Nitrate Ore - Limestone");
 
     // Strata Ores - Scoria
     add(BlockHandler.ORE_COAL_SCORIA.get(), "Coal Ore - Scoria");
@@ -199,7 +199,7 @@ public class LangGen extends LanguageProvider
     add(BlockHandler.ORE_CINNABAR_SCORIA.get(), "Cinnabar Ore - Scoria");
     add(BlockHandler.ORE_APATITE_SCORIA.get(), "Apatite Ore - Scoria");
     add(BlockHandler.ORE_SULFUR_SCORIA.get(), "Sulfur Ore - Scoria");
-    add(BlockHandler.ORE_SALTPETER_SCORIA.get(), "Saltpeter Ore - Scoria");
+    add(BlockHandler.ORE_POTASSIUM_NITRATE_SCORIA.get(), "Potassium Nitrate Ore - Scoria");
 
     // Strata Ores - Weathered Limestone
     add(BlockHandler.ORE_COAL_WEATHERED_LIMESTONE.get(), "Coal Ore - Weathered Limestone");
@@ -224,7 +224,7 @@ public class LangGen extends LanguageProvider
     add(BlockHandler.ORE_CINNABAR_WEATHERED_LIMESTONE.get(), "Cinnabar Ore - Weathered Limestone");
     add(BlockHandler.ORE_APATITE_WEATHERED_LIMESTONE.get(), "Apatite Ore - Weathered Limestone");
     add(BlockHandler.ORE_SULFUR_WEATHERED_LIMESTONE.get(), "Sulfur Ore - Weathered Limestone");
-    add(BlockHandler.ORE_SALTPETER_WEATHERED_LIMESTONE.get(), "Saltpeter Ore - Weathered Limestone");
+    add(BlockHandler.ORE_POTASSIUM_NITRATE_WEATHERED_LIMESTONE.get(), "Potassium Nitrate Ore - Weathered Limestone");
 
     // Strata Ores - Jasper
     add(BlockHandler.ORE_COAL_JASPER.get(), "Coal Ore - Jasper");
@@ -249,7 +249,7 @@ public class LangGen extends LanguageProvider
     add(BlockHandler.ORE_CINNABAR_JASPER.get(), "Cinnabar Ore - Jasper");
     add(BlockHandler.ORE_APATITE_JASPER.get(), "Apatite Ore - Jasper");
     add(BlockHandler.ORE_SULFUR_JASPER.get(), "Sulfur Ore - Jasper");
-    add(BlockHandler.ORE_SALTPETER_JASPER.get(), "Saltpeter Ore - Jasper");
+    add(BlockHandler.ORE_POTASSIUM_NITRATE_JASPER.get(), "Potassium Nitrate Ore - Jasper");
 
     // Strata Ores - Limestone (Quark)
     add(BlockHandler.ORE_COAL_Q_LIMESTONE.get(), "Coal Ore - Limestone");
@@ -274,7 +274,7 @@ public class LangGen extends LanguageProvider
     add(BlockHandler.ORE_CINNABAR_Q_LIMESTONE.get(), "Cinnabar Ore - Limestone");
     add(BlockHandler.ORE_APATITE_Q_LIMESTONE.get(), "Apatite Ore - Limestone");
     add(BlockHandler.ORE_SULFUR_Q_LIMESTONE.get(), "Sulfur Ore - Limestone");
-    add(BlockHandler.ORE_SALTPETER_Q_LIMESTONE.get(), "Saltpeter Ore - Limestone");
+    add(BlockHandler.ORE_POTASSIUM_NITRATE_Q_LIMESTONE.get(), "Potassium Nitrate Ore - Limestone");
 
     // Strata Ores - Marble
     add(BlockHandler.ORE_COAL_MARBLE.get(), "Coal Ore - Marble");
@@ -299,7 +299,7 @@ public class LangGen extends LanguageProvider
     add(BlockHandler.ORE_CINNABAR_MARBLE.get(), "Cinnabar Ore - Marble");
     add(BlockHandler.ORE_APATITE_MARBLE.get(), "Apatite Ore - Marble");
     add(BlockHandler.ORE_SULFUR_MARBLE.get(), "Sulfur Ore - Marble");
-    add(BlockHandler.ORE_SALTPETER_MARBLE.get(), "Saltpeter Ore - Marble");
+    add(BlockHandler.ORE_POTASSIUM_NITRATE_MARBLE.get(), "Potassium Nitrate Ore - Marble");
 
     // Strata Ores - Slate
     add(BlockHandler.ORE_COAL_SLATE.get(), "Coal Ore - Slate");
@@ -324,7 +324,7 @@ public class LangGen extends LanguageProvider
     add(BlockHandler.ORE_CINNABAR_SLATE.get(), "Cinnabar Ore - Slate");
     add(BlockHandler.ORE_APATITE_SLATE.get(), "Apatite Ore - Slate");
     add(BlockHandler.ORE_SULFUR_SLATE.get(), "Sulfur Ore - Slate");
-    add(BlockHandler.ORE_SALTPETER_SLATE.get(), "Saltpeter Ore - Slate");
+    add(BlockHandler.ORE_POTASSIUM_NITRATE_SLATE.get(), "Potassium Nitrate Ore - Slate");
 
     // Ingots
     add(ItemHandler.INGOT_COPPER.get(), "Copper Ingot");
@@ -398,7 +398,7 @@ public class LangGen extends LanguageProvider
     add(ItemHandler.DUST_COKE.get(), "Coke Dust");
     add(ItemHandler.DUST_GRAPHITE.get(), "Graphite Dust");
     add(ItemHandler.DUST_LITHIUM.get(), "Lithium Dust");
-    add(ItemHandler.DUST_SALTPETER.get(), "Saltpeter Dust");
+    add(ItemHandler.DUST_POTASSIUM_NITRATE.get(), "Potassium Nitrate Dust");
     add(ItemHandler.DUST_SULFUR.get(), "Sulfur Dust");
 
     add(ItemHandler.DUST_INVAR.get(), "Invar Dust");
@@ -406,6 +406,7 @@ public class LangGen extends LanguageProvider
     add(ItemHandler.DUST_SIGNALUM.get(), "Signalum Dust");
     add(ItemHandler.DUST_ENDERIUM.get(), "Enderium Dust");
     add(ItemHandler.DUST_APATITE.get(), "Apatite Dust");
+    add(ItemHandler.DUST_WOOD.get(), "Sawdust");
 
     // Gems
     add(ItemHandler.GEM_CERTUS_QUARTZ.get(), "Certus Quartz Crystal");
@@ -413,6 +414,9 @@ public class LangGen extends LanguageProvider
     add(ItemHandler.GEM_FLUIX.get(), "Fluix Crystal");
 
     add(ItemHandler.GEM_CINNABAR.get(), "Cinnabar");
+    add(ItemHandler.GEM_APATITE.get(), "Apatite");
+    add(ItemHandler.GEM_SULFUR.get(), "Sulfur");
+    add(ItemHandler.GEM_POTASSIUM_NITRATE.get(), "Potassium Nitrate");
 
     // Plates
     add(ItemHandler.PLATE_COPPER.get(), "Copper Plate");
@@ -489,6 +493,6 @@ public class LangGen extends LanguageProvider
     add(ItemHandler.CHUNK_CINNABAR.get(), "Cinnabar Chunk");
     add(ItemHandler.CHUNK_APATITE.get(), "Apatite Chunk");
     add(ItemHandler.CHUNK_SULFUR.get(), "Sulfur Chunk");
-    add(ItemHandler.CHUNK_SALTPETER.get(), "Saltpeter Chunk");
+    add(ItemHandler.CHUNK_POTASSIUM_NITRATE.get(), "Potassium Nitrate Chunk");
   }
 }

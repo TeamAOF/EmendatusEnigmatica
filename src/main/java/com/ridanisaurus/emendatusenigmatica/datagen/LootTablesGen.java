@@ -60,7 +60,7 @@ public class LootTablesGen extends BaseLootTableProvider {
     blockLootTable.put(BlockHandler.BLOCK_CINNABAR.get(), createBlockLootTable(BlockHandler.BLOCK_CINNABAR.get()));
     blockLootTable.put(BlockHandler.BLOCK_APATITE.get(), createBlockLootTable(BlockHandler.BLOCK_APATITE.get()));
     blockLootTable.put(BlockHandler.BLOCK_SULFUR.get(), createBlockLootTable(BlockHandler.BLOCK_SULFUR.get()));
-    blockLootTable.put(BlockHandler.BLOCK_SALTPETER.get(), createBlockLootTable(BlockHandler.BLOCK_SALTPETER.get()));
+    blockLootTable.put(BlockHandler.BLOCK_POTASSIUM_NITRATE.get(), createBlockLootTable(BlockHandler.BLOCK_POTASSIUM_NITRATE.get()));
 
 
     // Strata Ores - Stone
@@ -84,9 +84,9 @@ public class LootTablesGen extends BaseLootTableProvider {
     blockLootTable.put(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ.get(), createSpecialTable(ItemHandler.CHUNK_CHARGED_CERTUS_QUARTZ.get(), ItemHandler.GEM_CHARGED_CERTUS_QUARTZ.get()));
 
     blockLootTable.put(BlockHandler.ORE_CINNABAR.get(), createCountTable(ItemHandler.CHUNK_CINNABAR.get(), ItemHandler.GEM_CINNABAR.get(), 1, 2));
-    blockLootTable.put(BlockHandler.ORE_APATITE.get(), createCountTable(ItemHandler.CHUNK_APATITE.get(), ItemHandler.DUST_APATITE.get(), 4, 9));
-    blockLootTable.put(BlockHandler.ORE_SULFUR.get(), createCountTable(ItemHandler.CHUNK_SULFUR.get(), ItemHandler.DUST_SULFUR.get(), 3, 5));
-    blockLootTable.put(BlockHandler.ORE_SALTPETER.get(), createCountTable(ItemHandler.CHUNK_SALTPETER.get(), ItemHandler.DUST_SALTPETER.get(), 3, 5));
+    blockLootTable.put(BlockHandler.ORE_APATITE.get(), createCountTable(ItemHandler.CHUNK_APATITE.get(), ItemHandler.GEM_APATITE.get(), 4, 9));
+    blockLootTable.put(BlockHandler.ORE_SULFUR.get(), createCountTable(ItemHandler.CHUNK_SULFUR.get(), ItemHandler.GEM_SULFUR.get(), 3, 5));
+    blockLootTable.put(BlockHandler.ORE_POTASSIUM_NITRATE.get(), createCountTable(ItemHandler.CHUNK_POTASSIUM_NITRATE.get(), ItemHandler.GEM_POTASSIUM_NITRATE.get(), 3, 5));
 
 
     // Strata Ores - Andesite
@@ -110,9 +110,9 @@ public class LootTablesGen extends BaseLootTableProvider {
     blockLootTable.put(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_ANDESITE.get(), createSpecialTable(ItemHandler.CHUNK_CHARGED_CERTUS_QUARTZ.get(), ItemHandler.GEM_CHARGED_CERTUS_QUARTZ.get()));
 
     blockLootTable.put(BlockHandler.ORE_CINNABAR_ANDESITE.get(), createCountTable(ItemHandler.CHUNK_CINNABAR.get(), ItemHandler.GEM_CINNABAR.get(), 1, 2));
-    blockLootTable.put(BlockHandler.ORE_APATITE_ANDESITE.get(), createCountTable(ItemHandler.CHUNK_APATITE.get(), ItemHandler.DUST_APATITE.get(), 4, 9));
-    blockLootTable.put(BlockHandler.ORE_SULFUR_ANDESITE.get(), createCountTable(ItemHandler.CHUNK_SULFUR.get(), ItemHandler.DUST_SULFUR.get(), 3, 5));
-    blockLootTable.put(BlockHandler.ORE_SALTPETER_ANDESITE.get(), createCountTable(ItemHandler.CHUNK_SALTPETER.get(), ItemHandler.DUST_SALTPETER.get(), 3, 5));
+    blockLootTable.put(BlockHandler.ORE_APATITE_ANDESITE.get(), createCountTable(ItemHandler.CHUNK_APATITE.get(), ItemHandler.GEM_APATITE.get(), 4, 9));
+    blockLootTable.put(BlockHandler.ORE_SULFUR_ANDESITE.get(), createCountTable(ItemHandler.CHUNK_SULFUR.get(), ItemHandler.GEM_SULFUR.get(), 3, 5));
+    blockLootTable.put(BlockHandler.ORE_POTASSIUM_NITRATE_ANDESITE.get(), createCountTable(ItemHandler.CHUNK_POTASSIUM_NITRATE.get(), ItemHandler.GEM_POTASSIUM_NITRATE.get(), 3, 5));
 
     // Strata Ores - Gabbro
     blockLootTable.put(BlockHandler.ORE_COAL_GABBRO.get(), createSpecialTable(ItemHandler.CHUNK_COAL.get(), Items.COAL));
@@ -135,9 +135,9 @@ public class LootTablesGen extends BaseLootTableProvider {
     blockLootTable.put(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_GABBRO.get(), createSpecialTable(ItemHandler.CHUNK_CHARGED_CERTUS_QUARTZ.get(), ItemHandler.GEM_CHARGED_CERTUS_QUARTZ.get()));
 
     blockLootTable.put(BlockHandler.ORE_CINNABAR_GABBRO.get(), createCountTable(ItemHandler.CHUNK_CINNABAR.get(), ItemHandler.GEM_CINNABAR.get(), 1, 2));
-    blockLootTable.put(BlockHandler.ORE_APATITE_GABBRO.get(), createCountTable(ItemHandler.CHUNK_APATITE.get(), ItemHandler.DUST_APATITE.get(), 4, 9));
-    blockLootTable.put(BlockHandler.ORE_SULFUR_GABBRO.get(), createCountTable(ItemHandler.CHUNK_SULFUR.get(), ItemHandler.DUST_SULFUR.get(), 3, 5));
-    blockLootTable.put(BlockHandler.ORE_SALTPETER_GABBRO.get(), createCountTable(ItemHandler.CHUNK_SALTPETER.get(), ItemHandler.DUST_SALTPETER.get(), 3, 5));
+    blockLootTable.put(BlockHandler.ORE_APATITE_GABBRO.get(), createCountTable(ItemHandler.CHUNK_APATITE.get(), ItemHandler.GEM_APATITE.get(), 4, 9));
+    blockLootTable.put(BlockHandler.ORE_SULFUR_GABBRO.get(), createCountTable(ItemHandler.CHUNK_SULFUR.get(), ItemHandler.GEM_SULFUR.get(), 3, 5));
+    blockLootTable.put(BlockHandler.ORE_POTASSIUM_NITRATE_GABBRO.get(), createCountTable(ItemHandler.CHUNK_POTASSIUM_NITRATE.get(), ItemHandler.GEM_POTASSIUM_NITRATE.get(), 3, 5));
 
     // Strata Ores - Limestone (Create)
     blockLootTable.put(BlockHandler.ORE_COAL_C_LIMESTONE.get(), createSpecialTable(ItemHandler.CHUNK_COAL.get(), Items.COAL));
@@ -160,9 +160,9 @@ public class LootTablesGen extends BaseLootTableProvider {
     blockLootTable.put(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_C_LIMESTONE.get(), createSpecialTable(ItemHandler.CHUNK_CHARGED_CERTUS_QUARTZ.get(), ItemHandler.GEM_CHARGED_CERTUS_QUARTZ.get()));
 
     blockLootTable.put(BlockHandler.ORE_CINNABAR_C_LIMESTONE.get(), createCountTable(ItemHandler.CHUNK_CINNABAR.get(), ItemHandler.GEM_CINNABAR.get(), 1, 2));
-    blockLootTable.put(BlockHandler.ORE_APATITE_C_LIMESTONE.get(), createCountTable(ItemHandler.CHUNK_APATITE.get(), ItemHandler.DUST_APATITE.get(), 4, 9));
-    blockLootTable.put(BlockHandler.ORE_SULFUR_C_LIMESTONE.get(), createCountTable(ItemHandler.CHUNK_SULFUR.get(), ItemHandler.DUST_SULFUR.get(), 3, 5));
-    blockLootTable.put(BlockHandler.ORE_SALTPETER_C_LIMESTONE.get(), createCountTable(ItemHandler.CHUNK_SALTPETER.get(), ItemHandler.DUST_SALTPETER.get(), 3, 5));
+    blockLootTable.put(BlockHandler.ORE_APATITE_C_LIMESTONE.get(), createCountTable(ItemHandler.CHUNK_APATITE.get(), ItemHandler.GEM_APATITE.get(), 4, 9));
+    blockLootTable.put(BlockHandler.ORE_SULFUR_C_LIMESTONE.get(), createCountTable(ItemHandler.CHUNK_SULFUR.get(), ItemHandler.GEM_SULFUR.get(), 3, 5));
+    blockLootTable.put(BlockHandler.ORE_POTASSIUM_NITRATE_C_LIMESTONE.get(), createCountTable(ItemHandler.CHUNK_POTASSIUM_NITRATE.get(), ItemHandler.GEM_POTASSIUM_NITRATE.get(), 3, 5));
 
     // Strata Ores - Scoria
     blockLootTable.put(BlockHandler.ORE_COAL_SCORIA.get(), createSpecialTable(ItemHandler.CHUNK_COAL.get(), Items.COAL));
@@ -185,9 +185,9 @@ public class LootTablesGen extends BaseLootTableProvider {
     blockLootTable.put(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_SCORIA.get(), createSpecialTable(ItemHandler.CHUNK_CHARGED_CERTUS_QUARTZ.get(), ItemHandler.GEM_CHARGED_CERTUS_QUARTZ.get()));
 
     blockLootTable.put(BlockHandler.ORE_CINNABAR_SCORIA.get(), createCountTable(ItemHandler.CHUNK_CINNABAR.get(), ItemHandler.GEM_CINNABAR.get(), 1, 2));
-    blockLootTable.put(BlockHandler.ORE_APATITE_SCORIA.get(), createCountTable(ItemHandler.CHUNK_APATITE.get(), ItemHandler.DUST_APATITE.get(), 4, 9));
-    blockLootTable.put(BlockHandler.ORE_SULFUR_SCORIA.get(), createCountTable(ItemHandler.CHUNK_SULFUR.get(), ItemHandler.DUST_SULFUR.get(), 3, 5));
-    blockLootTable.put(BlockHandler.ORE_SALTPETER_SCORIA.get(), createCountTable(ItemHandler.CHUNK_SALTPETER.get(), ItemHandler.DUST_SALTPETER.get(), 3, 5));
+    blockLootTable.put(BlockHandler.ORE_APATITE_SCORIA.get(), createCountTable(ItemHandler.CHUNK_APATITE.get(), ItemHandler.GEM_APATITE.get(), 4, 9));
+    blockLootTable.put(BlockHandler.ORE_SULFUR_SCORIA.get(), createCountTable(ItemHandler.CHUNK_SULFUR.get(), ItemHandler.GEM_SULFUR.get(), 3, 5));
+    blockLootTable.put(BlockHandler.ORE_POTASSIUM_NITRATE_SCORIA.get(), createCountTable(ItemHandler.CHUNK_POTASSIUM_NITRATE.get(), ItemHandler.GEM_POTASSIUM_NITRATE.get(), 3, 5));
 
     // Strata Ores - Weathered Limestone
     blockLootTable.put(BlockHandler.ORE_COAL_WEATHERED_LIMESTONE.get(), createSpecialTable(ItemHandler.CHUNK_COAL.get(), Items.COAL));
@@ -210,9 +210,9 @@ public class LootTablesGen extends BaseLootTableProvider {
     blockLootTable.put(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_WEATHERED_LIMESTONE.get(), createSpecialTable(ItemHandler.CHUNK_CHARGED_CERTUS_QUARTZ.get(), ItemHandler.GEM_CHARGED_CERTUS_QUARTZ.get()));
 
     blockLootTable.put(BlockHandler.ORE_CINNABAR_WEATHERED_LIMESTONE.get(), createCountTable(ItemHandler.CHUNK_CINNABAR.get(), ItemHandler.GEM_CINNABAR.get(), 1, 2));
-    blockLootTable.put(BlockHandler.ORE_APATITE_WEATHERED_LIMESTONE.get(), createCountTable(ItemHandler.CHUNK_APATITE.get(), ItemHandler.DUST_APATITE.get(), 4, 9));
-    blockLootTable.put(BlockHandler.ORE_SULFUR_WEATHERED_LIMESTONE.get(), createCountTable(ItemHandler.CHUNK_SULFUR.get(), ItemHandler.DUST_SULFUR.get(), 3, 5));
-    blockLootTable.put(BlockHandler.ORE_SALTPETER_WEATHERED_LIMESTONE.get(), createCountTable(ItemHandler.CHUNK_SALTPETER.get(), ItemHandler.DUST_SALTPETER.get(), 3, 5));
+    blockLootTable.put(BlockHandler.ORE_APATITE_WEATHERED_LIMESTONE.get(), createCountTable(ItemHandler.CHUNK_APATITE.get(), ItemHandler.GEM_APATITE.get(), 4, 9));
+    blockLootTable.put(BlockHandler.ORE_SULFUR_WEATHERED_LIMESTONE.get(), createCountTable(ItemHandler.CHUNK_SULFUR.get(), ItemHandler.GEM_SULFUR.get(), 3, 5));
+    blockLootTable.put(BlockHandler.ORE_POTASSIUM_NITRATE_WEATHERED_LIMESTONE.get(), createCountTable(ItemHandler.CHUNK_POTASSIUM_NITRATE.get(), ItemHandler.GEM_POTASSIUM_NITRATE.get(), 3, 5));
 
     // Strata Ores - Jasper
     blockLootTable.put(BlockHandler.ORE_COAL_JASPER.get(), createSpecialTable(ItemHandler.CHUNK_COAL.get(), Items.COAL));
@@ -235,9 +235,9 @@ public class LootTablesGen extends BaseLootTableProvider {
     blockLootTable.put(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_JASPER.get(), createSpecialTable(ItemHandler.CHUNK_CHARGED_CERTUS_QUARTZ.get(), ItemHandler.GEM_CHARGED_CERTUS_QUARTZ.get()));
 
     blockLootTable.put(BlockHandler.ORE_CINNABAR_JASPER.get(), createCountTable(ItemHandler.CHUNK_CINNABAR.get(), ItemHandler.GEM_CINNABAR.get(), 1, 2));
-    blockLootTable.put(BlockHandler.ORE_APATITE_JASPER.get(), createCountTable(ItemHandler.CHUNK_APATITE.get(), ItemHandler.DUST_APATITE.get(), 4, 9));
-    blockLootTable.put(BlockHandler.ORE_SULFUR_JASPER.get(), createCountTable(ItemHandler.CHUNK_SULFUR.get(), ItemHandler.DUST_SULFUR.get(), 3, 5));
-    blockLootTable.put(BlockHandler.ORE_SALTPETER_JASPER.get(), createCountTable(ItemHandler.CHUNK_SALTPETER.get(), ItemHandler.DUST_SALTPETER.get(), 3, 5));
+    blockLootTable.put(BlockHandler.ORE_APATITE_JASPER.get(), createCountTable(ItemHandler.CHUNK_APATITE.get(), ItemHandler.GEM_APATITE.get(), 4, 9));
+    blockLootTable.put(BlockHandler.ORE_SULFUR_JASPER.get(), createCountTable(ItemHandler.CHUNK_SULFUR.get(), ItemHandler.GEM_SULFUR.get(), 3, 5));
+    blockLootTable.put(BlockHandler.ORE_POTASSIUM_NITRATE_JASPER.get(), createCountTable(ItemHandler.CHUNK_POTASSIUM_NITRATE.get(), ItemHandler.GEM_POTASSIUM_NITRATE.get(), 3, 5));
 
     // Strata Ores - Limestone (Quark)
     blockLootTable.put(BlockHandler.ORE_COAL_Q_LIMESTONE.get(), createSpecialTable(ItemHandler.CHUNK_COAL.get(), Items.COAL));
@@ -260,9 +260,9 @@ public class LootTablesGen extends BaseLootTableProvider {
     blockLootTable.put(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_Q_LIMESTONE.get(), createSpecialTable(ItemHandler.CHUNK_CHARGED_CERTUS_QUARTZ.get(), ItemHandler.GEM_CHARGED_CERTUS_QUARTZ.get()));
 
     blockLootTable.put(BlockHandler.ORE_CINNABAR_Q_LIMESTONE.get(), createCountTable(ItemHandler.CHUNK_CINNABAR.get(), ItemHandler.GEM_CINNABAR.get(), 1, 2));
-    blockLootTable.put(BlockHandler.ORE_APATITE_Q_LIMESTONE.get(), createCountTable(ItemHandler.CHUNK_APATITE.get(), ItemHandler.DUST_APATITE.get(), 4, 9));
-    blockLootTable.put(BlockHandler.ORE_SULFUR_Q_LIMESTONE.get(), createCountTable(ItemHandler.CHUNK_SULFUR.get(), ItemHandler.DUST_SULFUR.get(), 3, 5));
-    blockLootTable.put(BlockHandler.ORE_SALTPETER_Q_LIMESTONE.get(), createCountTable(ItemHandler.CHUNK_SALTPETER.get(), ItemHandler.DUST_SALTPETER.get(), 3, 5));
+    blockLootTable.put(BlockHandler.ORE_APATITE_Q_LIMESTONE.get(), createCountTable(ItemHandler.CHUNK_APATITE.get(), ItemHandler.GEM_APATITE.get(), 4, 9));
+    blockLootTable.put(BlockHandler.ORE_SULFUR_Q_LIMESTONE.get(), createCountTable(ItemHandler.CHUNK_SULFUR.get(), ItemHandler.GEM_SULFUR.get(), 3, 5));
+    blockLootTable.put(BlockHandler.ORE_POTASSIUM_NITRATE_Q_LIMESTONE.get(), createCountTable(ItemHandler.CHUNK_POTASSIUM_NITRATE.get(), ItemHandler.GEM_POTASSIUM_NITRATE.get(), 3, 5));
 
     // Strata Ores - Marble
     blockLootTable.put(BlockHandler.ORE_COAL_MARBLE.get(), createSpecialTable(ItemHandler.CHUNK_COAL.get(), Items.COAL));
@@ -285,9 +285,9 @@ public class LootTablesGen extends BaseLootTableProvider {
     blockLootTable.put(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_MARBLE.get(), createSpecialTable(ItemHandler.CHUNK_CHARGED_CERTUS_QUARTZ.get(), ItemHandler.GEM_CHARGED_CERTUS_QUARTZ.get()));
 
     blockLootTable.put(BlockHandler.ORE_CINNABAR_MARBLE.get(), createCountTable(ItemHandler.CHUNK_CINNABAR.get(), ItemHandler.GEM_CINNABAR.get(), 1, 2));
-    blockLootTable.put(BlockHandler.ORE_APATITE_MARBLE.get(), createCountTable(ItemHandler.CHUNK_APATITE.get(), ItemHandler.DUST_APATITE.get(), 4, 9));
-    blockLootTable.put(BlockHandler.ORE_SULFUR_MARBLE.get(), createCountTable(ItemHandler.CHUNK_SULFUR.get(), ItemHandler.DUST_SULFUR.get(), 3, 5));
-    blockLootTable.put(BlockHandler.ORE_SALTPETER_MARBLE.get(), createCountTable(ItemHandler.CHUNK_SALTPETER.get(), ItemHandler.DUST_SALTPETER.get(), 3, 5));
+    blockLootTable.put(BlockHandler.ORE_APATITE_MARBLE.get(), createCountTable(ItemHandler.CHUNK_APATITE.get(), ItemHandler.GEM_APATITE.get(), 4, 9));
+    blockLootTable.put(BlockHandler.ORE_SULFUR_MARBLE.get(), createCountTable(ItemHandler.CHUNK_SULFUR.get(), ItemHandler.GEM_SULFUR.get(), 3, 5));
+    blockLootTable.put(BlockHandler.ORE_POTASSIUM_NITRATE_MARBLE.get(), createCountTable(ItemHandler.CHUNK_POTASSIUM_NITRATE.get(), ItemHandler.GEM_POTASSIUM_NITRATE.get(), 3, 5));
 
     // Strata Ores - Slate
     blockLootTable.put(BlockHandler.ORE_COAL_SLATE.get(), createSpecialTable(ItemHandler.CHUNK_COAL.get(), Items.COAL));
@@ -310,8 +310,8 @@ public class LootTablesGen extends BaseLootTableProvider {
     blockLootTable.put(BlockHandler.ORE_CHARGED_CERTUS_QUARTZ_SLATE.get(), createSpecialTable(ItemHandler.CHUNK_CHARGED_CERTUS_QUARTZ.get(), ItemHandler.GEM_CHARGED_CERTUS_QUARTZ.get()));
 
     blockLootTable.put(BlockHandler.ORE_CINNABAR_SLATE.get(), createCountTable(ItemHandler.CHUNK_CINNABAR.get(), ItemHandler.GEM_CINNABAR.get(), 1, 2));
-    blockLootTable.put(BlockHandler.ORE_APATITE_SLATE.get(), createCountTable(ItemHandler.CHUNK_APATITE.get(), ItemHandler.DUST_APATITE.get(), 4, 9));
-    blockLootTable.put(BlockHandler.ORE_SULFUR_SLATE.get(), createCountTable(ItemHandler.CHUNK_SULFUR.get(), ItemHandler.DUST_SULFUR.get(), 3, 5));
-    blockLootTable.put(BlockHandler.ORE_SALTPETER_SLATE.get(), createCountTable(ItemHandler.CHUNK_SALTPETER.get(), ItemHandler.DUST_SALTPETER.get(), 3, 5));
+    blockLootTable.put(BlockHandler.ORE_APATITE_SLATE.get(), createCountTable(ItemHandler.CHUNK_APATITE.get(), ItemHandler.GEM_APATITE.get(), 4, 9));
+    blockLootTable.put(BlockHandler.ORE_SULFUR_SLATE.get(), createCountTable(ItemHandler.CHUNK_SULFUR.get(), ItemHandler.GEM_SULFUR.get(), 3, 5));
+    blockLootTable.put(BlockHandler.ORE_POTASSIUM_NITRATE_SLATE.get(), createCountTable(ItemHandler.CHUNK_POTASSIUM_NITRATE.get(), ItemHandler.GEM_POTASSIUM_NITRATE.get(), 3, 5));
   }
 }

@@ -63,7 +63,7 @@ public class BlockStatesAndModelsGen extends BlockStateProvider {
     simpleBlock(BlockHandler.BLOCK_CINNABAR.get(), models().cubeAll("block_cinnabar", new ResourceLocation(Reference.MOD_ID, "blocks/block_cinnabar")));
     simpleBlock(BlockHandler.BLOCK_APATITE.get(), models().cubeAll("block_apatite", new ResourceLocation(Reference.MOD_ID, "blocks/block_apatite")));
     simpleBlock(BlockHandler.BLOCK_SULFUR.get(), models().cubeAll("block_sulfur", new ResourceLocation(Reference.MOD_ID, "blocks/block_sulfur")));
-    simpleBlock(BlockHandler.BLOCK_SALTPETER.get(), models().cubeAll("block_saltpeter", new ResourceLocation(Reference.MOD_ID, "blocks/block_saltpeter")));
+    simpleBlock(BlockHandler.BLOCK_POTASSIUM_NITRATE.get(), models().cubeAll("block_potassium_nitrate", new ResourceLocation(Reference.MOD_ID, "blocks/block_potassium_nitrate")));
 
     // Ores
     simpleBlock(BlockHandler.ORE_COAL.get(), models().cubeAll("ore_coal", new ResourceLocation(Reference.MOD_ID, "blocks/ore_coal")));
@@ -88,7 +88,7 @@ public class BlockStatesAndModelsGen extends BlockStateProvider {
     simpleBlock(BlockHandler.ORE_CINNABAR.get(), models().cubeAll("ore_cinnabar", new ResourceLocation(Reference.MOD_ID, "blocks/ore_cinnabar")));
     simpleBlock(BlockHandler.ORE_APATITE.get(), models().cubeAll("ore_apatite", new ResourceLocation(Reference.MOD_ID, "blocks/ore_apatite")));
     simpleBlock(BlockHandler.ORE_SULFUR.get(), models().cubeAll("ore_sulfur", new ResourceLocation(Reference.MOD_ID, "blocks/ore_sulfur")));
-    simpleBlock(BlockHandler.ORE_SALTPETER.get(), models().cubeAll("ore_saltpeter", new ResourceLocation(Reference.MOD_ID, "blocks/ore_saltpeter")));
+    simpleBlock(BlockHandler.ORE_POTASSIUM_NITRATE.get(), models().cubeAll("ore_potassium_nitrate", new ResourceLocation(Reference.MOD_ID, "blocks/ore_potassium_nitrate")));
 
     // Strata Ores - Andesite
     simpleBlock(BlockHandler.ORE_COAL_ANDESITE.get(), models().cubeAll("ore_coal_andesite", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/minecraft/ore_coal_andesite")));
@@ -113,7 +113,7 @@ public class BlockStatesAndModelsGen extends BlockStateProvider {
     simpleBlock(BlockHandler.ORE_CINNABAR_ANDESITE.get(), models().cubeAll("ore_cinnabar_andesite", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/minecraft/ore_cinnabar_andesite")));
     simpleBlock(BlockHandler.ORE_APATITE_ANDESITE.get(), models().cubeAll("ore_apatite_andesite", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/minecraft/ore_apatite_andesite")));
     simpleBlock(BlockHandler.ORE_SULFUR_ANDESITE.get(), models().cubeAll("ore_sulfur_andesite", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/minecraft/ore_sulfur_andesite")));
-    simpleBlock(BlockHandler.ORE_SALTPETER_ANDESITE.get(), models().cubeAll("ore_saltpeter_andesite", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/minecraft/ore_saltpeter_andesite")));
+    simpleBlock(BlockHandler.ORE_POTASSIUM_NITRATE_ANDESITE.get(), models().cubeAll("ore_potassium_nitrate_andesite", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/minecraft/ore_potassium_nitrate_andesite")));
 
     // Strata Ores - Gabbro
     simpleBlock(BlockHandler.ORE_COAL_GABBRO.get(), models().cubeAll("ore_coal_gabbro", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/create/ore_coal_gabbro")));
@@ -138,7 +138,7 @@ public class BlockStatesAndModelsGen extends BlockStateProvider {
     simpleBlock(BlockHandler.ORE_CINNABAR_GABBRO.get(), models().cubeAll("ore_cinnabar_gabbro", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/create/ore_cinnabar_gabbro")));
     simpleBlock(BlockHandler.ORE_APATITE_GABBRO.get(), models().cubeAll("ore_apatite_gabbro", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/create/ore_apatite_gabbro")));
     simpleBlock(BlockHandler.ORE_SULFUR_GABBRO.get(), models().cubeAll("ore_sulfur_gabbro", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/create/ore_sulfur_gabbro")));
-    simpleBlock(BlockHandler.ORE_SALTPETER_GABBRO.get(), models().cubeAll("ore_saltpeter_gabbro", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/create/ore_saltpeter_gabbro")));
+    simpleBlock(BlockHandler.ORE_POTASSIUM_NITRATE_GABBRO.get(), models().cubeAll("ore_potassium_nitrate_gabbro", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/create/ore_potassium_nitrate_gabbro")));
 
     // Strata Ores - Limestone (Create)
     simpleBlock(BlockHandler.ORE_COAL_C_LIMESTONE.get(), models().cubeAll("ore_coal_c_limestone", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/create/ore_coal_limestone")));
@@ -163,7 +163,7 @@ public class BlockStatesAndModelsGen extends BlockStateProvider {
     simpleBlock(BlockHandler.ORE_CINNABAR_C_LIMESTONE.get(), models().cubeAll("ore_cinnabar_c_limestone", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/create/ore_cinnabar_limestone")));
     simpleBlock(BlockHandler.ORE_APATITE_C_LIMESTONE.get(), models().cubeAll("ore_apatite_c_limestone", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/create/ore_apatite_limestone")));
     simpleBlock(BlockHandler.ORE_SULFUR_C_LIMESTONE.get(), models().cubeAll("ore_sulfur_c_limestone", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/create/ore_sulfur_limestone")));
-    simpleBlock(BlockHandler.ORE_SALTPETER_C_LIMESTONE.get(), models().cubeAll("ore_saltpeter_c_limestone", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/create/ore_saltpeter_limestone")));
+    simpleBlock(BlockHandler.ORE_POTASSIUM_NITRATE_C_LIMESTONE.get(), models().cubeAll("ore_potassium_nitrate_c_limestone", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/create/ore_potassium_nitrate_limestone")));
 
     // Strata Ores - Scoria
     simpleBlock(BlockHandler.ORE_COAL_SCORIA.get(), models().cubeAll("ore_coal_scoria", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/create/ore_coal_scoria")));
@@ -188,7 +188,7 @@ public class BlockStatesAndModelsGen extends BlockStateProvider {
     simpleBlock(BlockHandler.ORE_CINNABAR_SCORIA.get(), models().cubeAll("ore_cinnabar_scoria", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/create/ore_cinnabar_scoria")));
     simpleBlock(BlockHandler.ORE_APATITE_SCORIA.get(), models().cubeAll("ore_apatite_scoria", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/create/ore_apatite_scoria")));
     simpleBlock(BlockHandler.ORE_SULFUR_SCORIA.get(), models().cubeAll("ore_sulfur_scoria", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/create/ore_sulfur_scoria")));
-    simpleBlock(BlockHandler.ORE_SALTPETER_SCORIA.get(), models().cubeAll("ore_saltpeter_scoria", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/create/ore_saltpeter_scoria")));
+    simpleBlock(BlockHandler.ORE_POTASSIUM_NITRATE_SCORIA.get(), models().cubeAll("ore_potassium_nitrate_scoria", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/create/ore_potassium_nitrate_scoria")));
 
     // Strata Ore - Weathered Limestone
     simpleBlock(BlockHandler.ORE_COAL_WEATHERED_LIMESTONE.get(), models().cubeAll("ore_coal_weathered_limestone", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/create/ore_coal_weathered_limestone")));
@@ -213,7 +213,7 @@ public class BlockStatesAndModelsGen extends BlockStateProvider {
     simpleBlock(BlockHandler.ORE_CINNABAR_WEATHERED_LIMESTONE.get(), models().cubeAll("ore_cinnabar_weathered_limestone", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/create/ore_cinnabar_weathered_limestone")));
     simpleBlock(BlockHandler.ORE_APATITE_WEATHERED_LIMESTONE.get(), models().cubeAll("ore_apatite_weathered_limestone", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/create/ore_apatite_weathered_limestone")));
     simpleBlock(BlockHandler.ORE_SULFUR_WEATHERED_LIMESTONE.get(), models().cubeAll("ore_sulfur_weathered_limestone", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/create/ore_sulfur_weathered_limestone")));
-    simpleBlock(BlockHandler.ORE_SALTPETER_WEATHERED_LIMESTONE.get(), models().cubeAll("ore_saltpeter_weathered_limestone", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/create/ore_saltpeter_weathered_limestone")));
+    simpleBlock(BlockHandler.ORE_POTASSIUM_NITRATE_WEATHERED_LIMESTONE.get(), models().cubeAll("ore_potassium_nitrate_weathered_limestone", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/create/ore_potassium_nitrate_weathered_limestone")));
     
     // Strata Ore - Jasper
     simpleBlock(BlockHandler.ORE_COAL_JASPER.get(), models().cubeAll("ore_coal_jasper", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/quark/ore_coal_jasper")));
@@ -238,7 +238,7 @@ public class BlockStatesAndModelsGen extends BlockStateProvider {
     simpleBlock(BlockHandler.ORE_CINNABAR_JASPER.get(), models().cubeAll("ore_cinnabar_jasper", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/quark/ore_cinnabar_jasper")));
     simpleBlock(BlockHandler.ORE_APATITE_JASPER.get(), models().cubeAll("ore_apatite_jasper", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/quark/ore_apatite_jasper")));
     simpleBlock(BlockHandler.ORE_SULFUR_JASPER.get(), models().cubeAll("ore_sulfur_jasper", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/quark/ore_sulfur_jasper")));
-    simpleBlock(BlockHandler.ORE_SALTPETER_JASPER.get(), models().cubeAll("ore_saltpeter_jasper", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/quark/ore_saltpeter_jasper")));
+    simpleBlock(BlockHandler.ORE_POTASSIUM_NITRATE_JASPER.get(), models().cubeAll("ore_potassium_nitrate_jasper", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/quark/ore_potassium_nitrate_jasper")));
     
     // Strata Ore - Limestone (Quark)
     simpleBlock(BlockHandler.ORE_COAL_Q_LIMESTONE.get(), models().cubeAll("ore_coal_q_limestone", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/quark/ore_coal_limestone")));
@@ -263,7 +263,7 @@ public class BlockStatesAndModelsGen extends BlockStateProvider {
     simpleBlock(BlockHandler.ORE_CINNABAR_Q_LIMESTONE.get(), models().cubeAll("ore_cinnabar_q_limestone", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/quark/ore_cinnabar_limestone")));
     simpleBlock(BlockHandler.ORE_APATITE_Q_LIMESTONE.get(), models().cubeAll("ore_apatite_q_limestone", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/quark/ore_apatite_limestone")));
     simpleBlock(BlockHandler.ORE_SULFUR_Q_LIMESTONE.get(), models().cubeAll("ore_sulfur_q_limestone", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/quark/ore_sulfur_limestone")));
-    simpleBlock(BlockHandler.ORE_SALTPETER_Q_LIMESTONE.get(), models().cubeAll("ore_saltpeter_q_limestone", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/quark/ore_saltpeter_limestone")));
+    simpleBlock(BlockHandler.ORE_POTASSIUM_NITRATE_Q_LIMESTONE.get(), models().cubeAll("ore_potassium_nitrate_q_limestone", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/quark/ore_potassium_nitrate_limestone")));
     
     // Strata Ore - Marble
     simpleBlock(BlockHandler.ORE_COAL_MARBLE.get(), models().cubeAll("ore_coal_marble", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/quark/ore_coal_marble")));
@@ -288,7 +288,7 @@ public class BlockStatesAndModelsGen extends BlockStateProvider {
     simpleBlock(BlockHandler.ORE_CINNABAR_MARBLE.get(), models().cubeAll("ore_cinnabar_marble", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/quark/ore_cinnabar_marble")));
     simpleBlock(BlockHandler.ORE_APATITE_MARBLE.get(), models().cubeAll("ore_apatite_marble", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/quark/ore_apatite_marble")));
     simpleBlock(BlockHandler.ORE_SULFUR_MARBLE.get(), models().cubeAll("ore_sulfur_marble", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/quark/ore_sulfur_marble")));
-    simpleBlock(BlockHandler.ORE_SALTPETER_MARBLE.get(), models().cubeAll("ore_saltpeter_marble", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/quark/ore_saltpeter_marble")));
+    simpleBlock(BlockHandler.ORE_POTASSIUM_NITRATE_MARBLE.get(), models().cubeAll("ore_potassium_nitrate_marble", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/quark/ore_potassium_nitrate_marble")));
     
     // Strata Ore - Slate
     simpleBlock(BlockHandler.ORE_COAL_SLATE.get(), models().cubeAll("ore_coal_slate", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/quark/ore_coal_slate")));
@@ -313,7 +313,7 @@ public class BlockStatesAndModelsGen extends BlockStateProvider {
     simpleBlock(BlockHandler.ORE_CINNABAR_SLATE.get(), models().cubeAll("ore_cinnabar_slate", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/quark/ore_cinnabar_slate")));
     simpleBlock(BlockHandler.ORE_APATITE_SLATE.get(), models().cubeAll("ore_apatite_slate", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/quark/ore_apatite_slate")));
     simpleBlock(BlockHandler.ORE_SULFUR_SLATE.get(), models().cubeAll("ore_sulfur_slate", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/quark/ore_sulfur_slate")));
-    simpleBlock(BlockHandler.ORE_SALTPETER_SLATE.get(), models().cubeAll("ore_saltpeter_slate", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/quark/ore_saltpeter_slate")));
+    simpleBlock(BlockHandler.ORE_POTASSIUM_NITRATE_SLATE.get(), models().cubeAll("ore_potassium_nitrate_slate", new ResourceLocation(Reference.MOD_ID, "blocks/strata_ores/quark/ore_potassium_nitrate_slate")));
   }
 
   @Override

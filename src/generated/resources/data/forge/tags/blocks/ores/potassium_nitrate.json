@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "emendatusenigmatica:ore_potassium_nitrate",
+    "emendatusenigmatica:ore_potassium_nitrate_andesite",
+    "emendatusenigmatica:ore_potassium_nitrate_gabbro",
+    "emendatusenigmatica:ore_potassium_nitrate_c_limestone",
+    "emendatusenigmatica:ore_potassium_nitrate_scoria",
+    "emendatusenigmatica:ore_potassium_nitrate_weathered_limestone",
+    "emendatusenigmatica:ore_potassium_nitrate_jasper",
+    "emendatusenigmatica:ore_potassium_nitrate_q_limestone",
+    "emendatusenigmatica:ore_potassium_nitrate_marble",
+    "emendatusenigmatica:ore_potassium_nitrate_slate"
+  ]
+}

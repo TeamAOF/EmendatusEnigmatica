@@ -3,7 +3,7 @@
   "ingredient": {
     "item": "emendatusenigmatica:ore_sulfur"
   },
-  "result": "emendatusenigmatica:dust_sulfur",
+  "result": "emendatusenigmatica:gem_sulfur",
   "experience": 0.7,
   "cookingtime": 100
 }

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "emendatusenigmatica:chunk_potassium_nitrate"
+  },
+  "result": "emendatusenigmatica:ore_potassium_nitrate_marble",
+  "count": 1
+}
