@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "emendatusenigmatica",
+  "ingredients": [
+    {
+      "item": "emendatusenigmatica:block_potassium_nitrate"
+    }
+  ],
+  "result": {
+    "item": "emendatusenigmatica:gem_potassium_nitrate",
+    "count": 9
+  }
+}

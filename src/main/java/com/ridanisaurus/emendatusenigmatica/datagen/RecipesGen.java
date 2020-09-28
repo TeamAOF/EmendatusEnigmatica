@@ -59,7 +59,7 @@ public class RecipesGen extends RecipeProvider {
             .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
             .build(consumer);
 
-    // Ingot from Block
+    // Ingot+Gem from Block
     ShapelessRecipeBuilder.shapelessRecipe(ItemHandler.INGOT_COPPER.get(), 9)
             .addIngredient(BlockHandler.BLOCK_COPPER.get())
             .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
@@ -167,6 +167,30 @@ public class RecipesGen extends RecipeProvider {
             .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
             .setGroup(Reference.MOD_ID)
             .build(consumer, new ResourceLocation(Reference.MOD_ID, "enderium_ingot_from_enderium_block"));
+
+    ShapelessRecipeBuilder.shapelessRecipe(ItemHandler.GEM_CINNABAR.get(), 9)
+            .addIngredient(BlockHandler.BLOCK_CINNABAR.get())
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .setGroup(Reference.MOD_ID)
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "cinnabar_gem_from_cinnabar_block"));
+
+    ShapelessRecipeBuilder.shapelessRecipe(ItemHandler.GEM_APATITE.get(), 9)
+            .addIngredient(BlockHandler.BLOCK_APATITE.get())
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .setGroup(Reference.MOD_ID)
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "apatite_gem_from_apatite_block"));
+
+    ShapelessRecipeBuilder.shapelessRecipe(ItemHandler.GEM_SULFUR.get(), 9)
+            .addIngredient(BlockHandler.BLOCK_SULFUR.get())
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .setGroup(Reference.MOD_ID)
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "sulfur_gem_from_sulfur_block"));
+
+    ShapelessRecipeBuilder.shapelessRecipe(ItemHandler.GEM_POTASSIUM_NITRATE.get(), 9)
+            .addIngredient(BlockHandler.BLOCK_POTASSIUM_NITRATE.get())
+            .addCriterion("cobblestone", InventoryChangeTrigger.Instance.forItems(Blocks.COBBLESTONE))
+            .setGroup(Reference.MOD_ID)
+            .build(consumer, new ResourceLocation(Reference.MOD_ID, "potassium_nitrate_gem_from_potassium_nitrate_block"));
 
     // Ingot from Nuggets
     ShapedRecipeBuilder.shapedRecipe(ItemHandler.INGOT_COPPER.get())

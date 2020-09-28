@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "emendatusenigmatica",
+  "ingredients": [
+    {
+      "item": "emendatusenigmatica:block_apatite"
+    }
+  ],
+  "result": {
+    "item": "emendatusenigmatica:gem_apatite",
+    "count": 9
+  }
+}
