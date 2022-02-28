@@ -1,13 +1,45 @@
 package com.ridanisaurus.emendatusenigmatica.util;
 
-import com.ridanisaurus.emendatusenigmatica.blocks.*;
+import com.ridanisaurus.emendatusenigmatica.blocks.BlockBase;
+import com.ridanisaurus.emendatusenigmatica.blocks.EEOreBlock;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreAluminum;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreApatite;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreArcane;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreBitumen;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreCertusQuartz;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreChargedCertusQuartz;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreCinnabar;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreCoal;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreCobalt;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreCopper;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreDiamond;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreDimensional;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreEmerald;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreFluorite;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreGold;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreIridium;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreIron;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreLapis;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreLead;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreNetherQuartz;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreNickel;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreOsmium;
+import com.ridanisaurus.emendatusenigmatica.blocks.OrePeridot;
+import com.ridanisaurus.emendatusenigmatica.blocks.OrePotassiumNitrate;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreRedstone;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreRuby;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreSapphire;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreSilver;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreSulfur;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreTin;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreUranium;
+import com.ridanisaurus.emendatusenigmatica.blocks.OreZinc;
 import com.ridanisaurus.emendatusenigmatica.items.BurnableItemBase;
 import com.ridanisaurus.emendatusenigmatica.items.ItemBase;
 import com.ridanisaurus.emendatusenigmatica.registries.ItemHandler;
-import net.minecraft.block.Block;
-import net.minecraft.block.OreBlock;
-import net.minecraft.item.Item;
-import net.minecraft.item.Items;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Block;
 
 import javax.annotation.Nullable;
 import java.util.function.Supplier;
@@ -75,7 +107,7 @@ public enum Materials {
   public final String id;
   public final String localisedName;
   public final Supplier<Block> block;
-  public final Supplier<OreBlock> oreBlock;
+  public final Supplier<EEOreBlock> oreBlock;
   public final Supplier<Item> item;
   private final Source source;
 
@@ -99,7 +131,7 @@ public enum Materials {
 
   public final String[] type;
 
-  Materials(String id, String localisedName, String[] type, Supplier<Block> block, @Nullable Supplier<OreBlock> oreBlock, Supplier<Item> item, Source source, @Nullable OreDropInfo nonSilkDrop, int tintColour, int baseline, int spread, int count, int size) {
+  Materials(String id, String localisedName, String[] type, Supplier<Block> block, @Nullable Supplier<EEOreBlock> oreBlock, Supplier<Item> item, Source source, @Nullable OreDropInfo nonSilkDrop, int tintColour, int baseline, int spread, int count, int size) {
     this.id = id;
     this.localisedName = localisedName;
     this.block = block;
@@ -128,7 +160,7 @@ public enum Materials {
     this.type = type;
   }
 
-  Materials(String id, String localisedName, String[] type, Supplier<Block> block, Supplier<OreBlock> oreBlock, Supplier<Item> item, Source source, int tintColour, int baseline, int spread, int count, int size) {
+  Materials(String id, String localisedName, String[] type, Supplier<Block> block, Supplier<EEOreBlock> oreBlock, Supplier<Item> item, Source source, int tintColour, int baseline, int spread, int count, int size) {
     this.id = id;
     this.localisedName = localisedName;
     this.block = block;

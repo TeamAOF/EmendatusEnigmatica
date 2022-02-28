@@ -24,50 +24,42 @@
 
 package com.ridanisaurus.emendatusenigmatica.proxy;
 
-import com.ridanisaurus.emendatusenigmatica.reward.PatreonSupporterRewardHandler;
 import com.ridanisaurus.emendatusenigmatica.inventory.EnigmaticFortunizerScreen;
 import com.ridanisaurus.emendatusenigmatica.registries.ContainerHandler;
 import com.ridanisaurus.emendatusenigmatica.registries.OreHandler;
-import net.minecraft.block.Block;
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.ScreenManager;
+import com.ridanisaurus.emendatusenigmatica.reward.PatreonSupporterRewardHandler;
+import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.RenderTypeLookup;
-import net.minecraft.client.renderer.entity.PlayerRenderer;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.EntityType;
-import net.minecraftforge.fml.RegistryObject;
-import net.minecraftforge.fml.client.registry.IRenderFactory;
-import net.minecraftforge.fml.client.registry.RenderingRegistry;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraft.client.renderer.entity.player.PlayerRenderer;
+import net.minecraft.world.level.block.Block;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.EntityRenderersEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
-import java.util.Map;
 import java.util.function.Supplier;
 
-public class ClientProxy implements IProxy {
+@Mod.EventBusSubscriber(modid = "emendatusenigmatica", bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+public class ClientProxy extends CommonProxy {
+	@SubscribeEvent
+	public static void load(FMLClientSetupEvent event) {
+		MenuScreens.register(ContainerHandler.ENIGMATIC_FORTUNIZER_CONTAINER.get(), EnigmaticFortunizerScreen::new);
 
-	@Override
-	public void preInit(FMLCommonSetupEvent event) {
-		ScreenManager.register(ContainerHandler.ENIGMATIC_FORTUNIZER_CONTAINER.get(), EnigmaticFortunizerScreen::new);
-	}
-
-	@Override
-	public void init(FMLCommonSetupEvent event) {
-		Map<String, PlayerRenderer> skinMap = Minecraft.getInstance().getEntityRenderDispatcher().getSkinMap();
-		for (PlayerRenderer render : new PlayerRenderer[]{skinMap.get("default"), skinMap.get("slim")})
-			render.addLayer(new PatreonSupporterRewardHandler(render));
-	}
-
-	@Override
-	public void postInit(FMLCommonSetupEvent event) {
-		for (RegistryObject<Block> block : OreHandler.BLOCKS.getEntries()) {
-			RenderTypeLookup.setRenderLayer(block.get(), layer -> layer == RenderType.solid() || layer == RenderType.translucent());
+		for (Supplier<Block> block : OreHandler.BLOCKS.getEntries()) {
+			ItemBlockRenderTypes.setRenderLayer(block.get(), layer -> layer == RenderType.solid() || layer == RenderType.translucent());
 		}
 	}
 
-	@Override
-	public <T extends Entity> void registerEntityRenderer(EntityType<T> entityClass, Supplier<IRenderFactory<T>> renderFactory) {
-		RenderingRegistry.registerEntityRenderingHandler(entityClass, renderFactory.get());
-	}
+	@SubscribeEvent
+	public static void addLayers(EntityRenderersEvent.AddLayers event) {
+		if (event.getSkin("default") instanceof PlayerRenderer playerRenderer) {
+			playerRenderer.addLayer(new PatreonSupporterRewardHandler(playerRenderer));
+		}
 
+		if (event.getSkin("slim") instanceof PlayerRenderer playerRenderer) {
+			playerRenderer.addLayer(new PatreonSupporterRewardHandler(playerRenderer));
+		}
+	}
 }

@@ -24,26 +24,8 @@
 
 package com.ridanisaurus.emendatusenigmatica.blocks;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.block.OreBlock;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IWorldReader;
-import net.minecraftforge.common.ToolType;
-
-import net.minecraft.block.AbstractBlock.Properties;
-
-public class OreSilver extends OreBlock {
-    public OreSilver() { super(Properties.of(Material.STONE)
-            .strength(3.0f,3.0f)
-            .harvestLevel(2)
-            .harvestTool(ToolType.PICKAXE)
-            .requiresCorrectToolForDrops());
-    }
-
-    @Override
-    public int getExpDrop(BlockState state, IWorldReader reader, BlockPos pos, int fortune, int silktouch) {
-        return 0;
-    }
+public class OreSilver extends EEOreBlock {
+	public OreSilver() {
+		super(2);
+	}
 }

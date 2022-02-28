@@ -24,33 +24,10 @@
 
 package com.ridanisaurus.emendatusenigmatica.blocks;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.block.OreBlock;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.MathHelper;
-import net.minecraft.world.IWorldReader;
-import net.minecraftforge.common.ToolType;
+import net.minecraft.util.valueproviders.UniformInt;
 
-import java.util.Random;
-
-import net.minecraft.block.AbstractBlock.Properties;
-
-public class OreLapis extends OreBlock {
-    public OreLapis() { super(Properties.of(Material.STONE)
-            .strength(3.0f,3.0f)
-            .harvestLevel(1)
-            .harvestTool(ToolType.PICKAXE)
-            .requiresCorrectToolForDrops());
-    }
-
-    protected int xpOnDrop(Random rand) {
-        return MathHelper.nextInt(rand, 2, 5);
-    }
-
-    @Override
-    public int getExpDrop(BlockState state, IWorldReader reader, BlockPos pos, int fortune, int silktouch) {
-        return silktouch == 0 ? this.xpOnDrop(RANDOM) : 0;
-    }
+public class OreLapis extends EEOreBlock {
+	public OreLapis() {
+		super(1, UniformInt.of(2, 5));
+	}
 }

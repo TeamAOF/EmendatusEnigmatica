@@ -24,30 +24,10 @@
 
 package com.ridanisaurus.emendatusenigmatica.blocks;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.block.OreBlock;
-import net.minecraft.block.material.Material;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.MathHelper;
-import net.minecraft.world.IWorldReader;
-import net.minecraftforge.common.ToolType;
+import net.minecraft.util.valueproviders.UniformInt;
 
-import java.util.Random;
-
-public class OrePeridot extends OreBlock {
-    public OrePeridot() { super(Properties.of(Material.STONE)
-            .strength(3.0f,3.0f)
-            .harvestLevel(2)
-            .harvestTool(ToolType.PICKAXE)
-            .requiresCorrectToolForDrops());
-    }
-
-    protected int xpOnDrop(Random rand) {
-        return MathHelper.nextInt(rand, 3, 7);
-    }
-
-    @Override
-    public int getExpDrop(BlockState state, IWorldReader reader, BlockPos pos, int fortune, int silktouch) {
-        return silktouch == 0 ? this.xpOnDrop(RANDOM) : 0;
-    }
+public class OrePeridot extends EEOreBlock {
+	public OrePeridot() {
+		super(2, UniformInt.of(3, 7));
+	}
 }

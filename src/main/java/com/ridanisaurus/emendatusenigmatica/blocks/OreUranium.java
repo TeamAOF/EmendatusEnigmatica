@@ -24,53 +24,39 @@
 
 package com.ridanisaurus.emendatusenigmatica.blocks;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.block.OreBlock;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.client.particle.Particle;
-import net.minecraft.client.particle.RedstoneParticle;
-import net.minecraft.particles.ParticleTypes;
-import net.minecraft.particles.RedstoneParticleData;
-import net.minecraft.util.Direction;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IWorldReader;
-import net.minecraft.world.World;
-import net.minecraftforge.common.ToolType;
+import com.mojang.math.Vector3f;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.core.particles.DustParticleOptions;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.Random;
 
-import net.minecraft.block.AbstractBlock.Properties;
+public class OreUranium extends EEOreBlock {
+	private static final DustParticleOptions DUST_1 = new DustParticleOptions(new Vector3f(0.67F, 0.98F, 0.01F), 1F);
+	private static final DustParticleOptions DUST_2 = new DustParticleOptions(new Vector3f(0.82F, 0.88F, 0.11F), 1F);
 
-public class OreUranium extends OreBlock {
-    public OreUranium() { super(Properties.of(Material.STONE)
-            .strength(3.0f,3.0f)
-            .harvestLevel(2)
-            .harvestTool(ToolType.PICKAXE)
-            .requiresCorrectToolForDrops());
-    }
+	public OreUranium() {
+		super(2);
+	}
 
-    @Override
-    public int getExpDrop(BlockState state, IWorldReader reader, BlockPos pos, int fortune, int silktouch) {
-        return 0;
-    }
+	@Override
+	public void animateTick(BlockState stateIn, Level worldIn, BlockPos pos, Random rand) {
+		super.animateTick(stateIn, worldIn, pos, rand);
 
-    @Override
-    public void animateTick(BlockState stateIn, World worldIn, BlockPos pos, Random rand) {
-        super.animateTick(stateIn, worldIn, pos, rand);
-
-        if(rand.nextInt(10) == 0) {
-            for(Direction direction : Direction.values()) {
-                BlockPos blockpos = pos.relative(direction);
-                if (!worldIn.getBlockState(blockpos).isSolidRender(worldIn, blockpos)) {
-                    Direction.Axis direction$axis = direction.getAxis();
-                    double d1 = direction$axis == Direction.Axis.X ? 0.5D + 0.5625D * (double)direction.getStepX() : (double)rand.nextFloat();
-                    double d2 = direction$axis == Direction.Axis.Y ? 0.5D + 0.5625D * (double)direction.getStepY() : (double)rand.nextFloat();
-                    double d3 = direction$axis == Direction.Axis.Z ? 0.5D + 0.5625D * (double)direction.getStepZ() : (double)rand.nextFloat();
-                    worldIn.addParticle(new RedstoneParticleData(0.67F,0.98F,0.01F,1F), (double)pos.getX() + d1, (double)pos.getY() + d2, (double)pos.getZ() + d3, 0.0D, 0.0D, 0.0D);
-                    worldIn.addParticle(new RedstoneParticleData(0.82F,0.88F,0.11F,1F), (double)pos.getX() + d1, (double)pos.getY() + d2, (double)pos.getZ() + d3, 0.0D, 0.0D, 0.0D);
-                }
-            }
-        }
-    }
+		if (rand.nextInt(10) == 0) {
+			for (Direction direction : Direction.values()) {
+				BlockPos blockpos = pos.relative(direction);
+				if (!worldIn.getBlockState(blockpos).isSolidRender(worldIn, blockpos)) {
+					Direction.Axis direction$axis = direction.getAxis();
+					double d1 = direction$axis == Direction.Axis.X ? 0.5D + 0.5625D * (double) direction.getStepX() : (double) rand.nextFloat();
+					double d2 = direction$axis == Direction.Axis.Y ? 0.5D + 0.5625D * (double) direction.getStepY() : (double) rand.nextFloat();
+					double d3 = direction$axis == Direction.Axis.Z ? 0.5D + 0.5625D * (double) direction.getStepZ() : (double) rand.nextFloat();
+					worldIn.addParticle(DUST_1, (double) pos.getX() + d1, (double) pos.getY() + d2, (double) pos.getZ() + d3, 0.0D, 0.0D, 0.0D);
+					worldIn.addParticle(DUST_2, (double) pos.getX() + d1, (double) pos.getY() + d2, (double) pos.getZ() + d3, 0.0D, 0.0D, 0.0D);
+				}
+			}
+		}
+	}
 }

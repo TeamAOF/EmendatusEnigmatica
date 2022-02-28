@@ -24,54 +24,36 @@
 
 package com.ridanisaurus.emendatusenigmatica.blocks;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.block.OreBlock;
-import net.minecraft.block.material.Material;
-import net.minecraft.particles.ParticleTypes;
-import net.minecraft.util.Direction;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.MathHelper;
-import net.minecraft.world.IWorldReader;
-import net.minecraft.world.World;
-import net.minecraftforge.common.ToolType;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.state.BlockState;
 
 import java.util.Random;
 
-import net.minecraft.block.AbstractBlock.Properties;
+public class OreArcane extends EEOreBlock {
+	public OreArcane() {
+		super(1, UniformInt.of(1, 3));
+	}
 
-public class OreArcane extends OreBlock {
-    public OreArcane() { super(Properties.of(Material.STONE)
-            .strength(3.0f,3.0f)
-            .harvestLevel(1)
-            .harvestTool(ToolType.PICKAXE)
-            .requiresCorrectToolForDrops());
-    }
+	@Override
+	public void animateTick(BlockState stateIn, Level worldIn, BlockPos pos, Random rand) {
+		super.animateTick(stateIn, worldIn, pos, rand);
 
-    protected int xpOnDrop(Random rand) {
-        return MathHelper.nextInt(rand, 1, 3);
-    }
-
-    @Override
-    public int getExpDrop(BlockState state, IWorldReader reader, BlockPos pos, int fortune, int silktouch) {
-        return silktouch == 0 ? this.xpOnDrop(RANDOM) : 0;
-    }
-
-    @Override
-    public void animateTick(BlockState stateIn, World worldIn, BlockPos pos, Random rand) {
-        super.animateTick(stateIn, worldIn, pos, rand);
-
-        if(rand.nextInt(5) == 0) {
-            for(Direction direction : Direction.values()) {
-                BlockPos blockpos = pos.relative(direction);
-                if (!worldIn.getBlockState(blockpos).isSolidRender(worldIn, blockpos)) {
-                    Direction.Axis direction$axis = direction.getAxis();
-                    double d1 = direction$axis == Direction.Axis.X ? 0.5D + 0.5625D * (double)direction.getStepX() : (double)rand.nextFloat();
-                    double d2 = direction$axis == Direction.Axis.Y ? 0.5D + 0.5625D * (double)direction.getStepY() : (double)rand.nextFloat();
-                    double d3 = direction$axis == Direction.Axis.Z ? 0.5D + 0.5625D * (double)direction.getStepZ() : (double)rand.nextFloat();
-                    worldIn.addParticle(ParticleTypes.REVERSE_PORTAL, (double)pos.getX() + d1, (double)pos.getY() + d2, (double)pos.getZ() + d3, 0.0D, 0.0D, 0.0D);
-                    worldIn.addParticle(ParticleTypes.PORTAL, (double)pos.getX() + d1, (double)pos.getY() + d2, (double)pos.getZ() + d3, 0.0D, 0.0D, 0.0D);
-                }
-            }
-        }
-    }
+		if (rand.nextInt(5) == 0) {
+			for (Direction direction : Direction.values()) {
+				BlockPos blockpos = pos.relative(direction);
+				if (!worldIn.getBlockState(blockpos).isSolidRender(worldIn, blockpos)) {
+					Direction.Axis direction$axis = direction.getAxis();
+					double d1 = direction$axis == Direction.Axis.X ? 0.5D + 0.5625D * (double) direction.getStepX() : (double) rand.nextFloat();
+					double d2 = direction$axis == Direction.Axis.Y ? 0.5D + 0.5625D * (double) direction.getStepY() : (double) rand.nextFloat();
+					double d3 = direction$axis == Direction.Axis.Z ? 0.5D + 0.5625D * (double) direction.getStepZ() : (double) rand.nextFloat();
+					worldIn.addParticle(ParticleTypes.REVERSE_PORTAL, (double) pos.getX() + d1, (double) pos.getY() + d2, (double) pos.getZ() + d3, 0.0D, 0.0D, 0.0D);
+					worldIn.addParticle(ParticleTypes.PORTAL, (double) pos.getX() + d1, (double) pos.getY() + d2, (double) pos.getZ() + d3, 0.0D, 0.0D, 0.0D);
+				}
+			}
+		}
+	}
 }
